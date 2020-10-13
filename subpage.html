@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio 4.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b3d88808e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div id="Second" class="" uk-height-viewport>
+      <!-- -- nav -- -->
+      <nav
+        class="uk-navbar-container uk-navbar-transparent"
+        uk-navbar
+        uk-sticky
+      >
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li class="uk-transition-toggle" tabindex="0">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="swap" class="transition-fade">
+        <div
+          id="sub"
+          class="uk-background-top-right uk-background-contain uk-panel uk-flex uk-flex-middle uk-flex-center"
+          uk-height-viewport
+        >
+          <a href="./index.html#Right"><h1>Sub</h1></a>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
