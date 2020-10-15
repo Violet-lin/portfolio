@@ -3,15 +3,10 @@ gsap.registerPlugin(ScrollTrigger);
 /*=========================
   Landing Panel
   =========================*/
-gsap.from(
-  "#landing-hero",
-  {
-    opacity: 0,
-    x: -20,
-    duration: 0.5,
-  },
-  3
-);
+gsap.from("#landing-hero", {
+  opacity: 0,
+  duration: 1.5,
+});
 
 let tl = gsap.timeline();
 
@@ -22,42 +17,22 @@ tl.from("#landingPg", {
   ease: "expo.out",
 })
   .from(
-    ".landing-text01",
+    [".landing-text01", ".landing-text02", ".landing-text03"],
     {
       opacity: 0,
-      y: 20,
-      duration: 1,
-      ease: "back.out",
+      translateY: 50,
+      duration: 1.5,
     },
-    "+=0.5"
+    "+=1"
   )
-  .from(
-    ".landing-text02",
-    {
-      opacity: 0,
-      y: 20,
-      duration: 1,
-      ease: "back.out",
-    },
-    "-=0.2"
-  )
-  .from(
-    ".landing-text03",
-    {
-      opacity: 0,
-      duration: 1,
-      ease: "back.out",
-    },
-    "+=0.2"
-  )
+
   .from(
     ".landing-button",
     {
       opacity: 0,
-      duration: 1,
-      ease: "back.out",
+      duration: 1.5,
     },
-    "+=0.2"
+    "+=0"
   );
 /*=========================
   Last Panel
