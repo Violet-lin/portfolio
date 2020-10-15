@@ -45,13 +45,13 @@
       <div id="landing-hero" class=""><img src="img/landingHero.png" alt=""></div>
       <!-- <p class="uk-h4">Top Right</p> -->
         <div id="landing-text" class="transition-fade">
-          <h3>Hi, I'm Violet.</h3>
-          <h1>I bring <br/>design & development 
+          <h3 class="landing-text01">Hi, I'm Violet.</h3>
+          <h1 class="landing-text02">I bring <br/>design & development 
             together</h1>
-          <p>
+          <p class="landing-text03">
             A multimedia specialist that is active in Singapore and London.
           </p>
-          <a class="uk-button uk-button-default" href="/subpage.html">Learn more</a>
+          <a class="landing-button uk-button uk-button-default" href="/subpage.html">Learn more</a>
         </div>
 
         <!-- <img src="img/deco_mark01.png" alt="">
@@ -209,11 +209,13 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <!-- SWUP -->
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+  <script src="https://unpkg.com/@barba/core"></script>
   <script>
-  
-    const swup = new Swup();
-  
+
+   barba.init({
+    // ...
+  })
+ 
   </script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

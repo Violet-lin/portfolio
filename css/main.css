@@ -119,7 +119,7 @@ body {
   left: 10%;
   width: 30%;
   /* some gaps when it is not centralised view. */
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
 }
 
 /* @media only screen and (max-width: 640px) { */
@@ -129,7 +129,7 @@ body {
     left: auto;
     width: 60%;
     text-align: center;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
   }
   #landing-hero {
     display: none;
@@ -189,7 +189,7 @@ h1 {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  border: 1px solid orangered;
+  /* border: 1px solid orangered; */
   margin-top: 0px !important;
   margin: 0 0 6px 0 !important;
 }
