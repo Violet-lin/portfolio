@@ -96,8 +96,11 @@ body {
   border: 1px solid blue;
 }
 
+.outlineTem {
+  border: 1px solid red;
+}
 /* ------------ */
-/* Landing */
+/* Landing      */
 /* ------------ */
 #landingPg {
   background-image: url(../img/bg_Grp_Splash.jpg);
@@ -107,11 +110,9 @@ body {
 
 #landing-hero {
   /* position: absolute; */
-  /* top:  */
-  bottom: 0;
-  left: 0;
-  display: block;
-  /* border: 1px solid violet; */
+  /* bottom: 0;
+  right: 0; */
+  border: 1px solid violet;
 }
 
 #landing-text {
@@ -140,7 +141,9 @@ body {
   background-image: url(../img/bg_Grp_Splash.jpg);
   background-repeat: no-repeat;
 }
-
+/* ------------ */
+/* Footer       */
+/* ------------ */
 #footer {
   background-image: url(../img/bg_footer.png);
   background-repeat: no-repeat;
@@ -163,9 +166,32 @@ body {
   /* border: 1px solid orange; */
 }
 
-#footer-animation {
-  /* position: absolute; */
-  border: 1px solid magenta;
+/* ------------ */
+/* About Me     */
+/* ------------ */
+
+#aboutLanding {
+  /* background-image: url(../img/bg_abt01.png); */
+  background: url(../img/bg_abt02.png) right bottom no-repeat,
+    url(../img/bg_abt01.png) left top no-repeat;
+  /* background-repeat: no-repeat; */
+  /* position: relative; */
+}
+
+#aboutLanding img {
+  padding: 20px 0;
+  border: 1px solid violet;
+}
+
+.aboutLanding-content-text {
+  width: 70%;
+}
+
+.st0 {
+  fill: #666;
+}
+.st0:hover {
+  fill: #dad0e8;
 }
 
 #ani-rect01 {
