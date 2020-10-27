@@ -91,6 +91,73 @@ body {
   color: #666;
 }
 
+#ani-rect01 {
+  position: absolute;
+  top: 0;
+  /* border: 1px solid grey; */
+}
+
+#ani-rect02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* border: 1px solid grey; */
+}
+
+h1 {
+  font-family: Alice !important;
+  color: #666 !important;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  /* border: 1px solid orangered; */
+  margin-top: 0px !important;
+  margin: 0 0 6px 0 !important;
+}
+
+h3 {
+  font-family: Alice !important;
+  color: #666 !important;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+p {
+  /* font-family: Alice; */
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+blockquote {
+  /* font-family: Alice; */
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+pre {
+  /* font-family: Alice; */
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+.uk-button {
+  padding: 0 20px !important;
+}
+
 .sectionOutline {
   position: relative;
   border: 1px solid blue;
@@ -99,6 +166,7 @@ body {
 .outlineTem {
   border: 1px solid red;
 }
+
 /* ------------ */
 /* Landing      */
 /* ------------ */
@@ -186,74 +254,34 @@ body {
 .aboutLanding-content-text {
   width: 70%;
 }
+/* ------------ */
+/* Gallery      */
+/* ------------ */
+.logoBack {
+  background-color: black;
+}
+
+#logoG .text-content {
+  width: 90%;
+}
+
+#logoG .footer-navbtn-left {
+  background: url(../img/bg_navbtn_home.png) no-repeat;
+}
+
+.footer-navbtn-left,
+.footer-navbtn-right {
+  height: 200px;
+}
 
 .st0 {
   fill: #666;
 }
-.st0:hover {
+.footer-navbtn-left:hover .st0 {
   fill: #dad0e8;
 }
-
-#ani-rect01 {
-  position: absolute;
-  top: 0;
-  /* border: 1px solid grey; */
-}
-
-#ani-rect02 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* border: 1px solid grey; */
-}
-
-h1 {
-  font-family: Alice !important;
-  color: #666 !important;
-  font-size: 40px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
-  /* border: 1px solid orangered; */
-  margin-top: 0px !important;
-  margin: 0 0 6px 0 !important;
-}
-h3 {
-  font-family: Alice !important;
-  color: #666 !important;
-  font-size: 30px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
-}
-p {
-  /* font-family: Alice; */
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
-}
-blockquote {
-  /* font-family: Alice; */
-  font-size: 21px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-pre {
-  /* font-family: Alice; */
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 18.5714px;
-}
-.uk-button {
-  padding: 0 20px !important;
+.footer-navbtn-right:hover .st0 {
+  fill: #dad0e8;
 }
 /* ------------------------ */
 /* Animation Last section   */
