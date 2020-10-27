@@ -191,7 +191,7 @@ pre {
   /* border: 1px solid brown; */
 }
 
-/* @media only screen and (max-width: 640px) { */
+/* @media only screen and (max-width: 640px) */
 @media (max-width: 640px) {
   #landing-text {
     position: absolute;
@@ -208,6 +208,47 @@ pre {
 #test {
   background-image: url(../img/bg_Grp_Splash.jpg);
   background-repeat: no-repeat;
+}
+
+.panel-content {
+  width: 40%;
+  padding: 5%;
+  border: 1px solid pink;
+}
+.panel-caption {
+  padding: 10px 0;
+  /* border: 1px solid pink; */
+}
+
+.panel-imgs {
+  position: absolute;
+  background-color: black;
+  right: 0;
+  height: 100%;
+  width: 25%;
+}
+
+/* tablet landscape */
+@media (max-width: 960px) {
+  .panel-imgs {
+    width: 40%;
+  }
+}
+/* mini */
+@media (max-width: 600px) {
+  .panel-imgs {
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+  }
+  .panel-content {
+    font-size: small;
+    width: 60%;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* ------------ */
 /* Footer       */

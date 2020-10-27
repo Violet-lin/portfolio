@@ -7,15 +7,6 @@
     <meta name="description" content="Portfolio that is coded by me" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content=""> -->
-
-    <!-- <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png"> -->
-    <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -24,10 +15,7 @@
     />
 
     <!-- UIkit CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css"/>
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
@@ -39,10 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/b3d88808e5.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b3d88808e5.js" crossorigin="anonymous"></script>
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -59,36 +44,59 @@
             <p class="landing-text03">
               A multimedia specialist that is active in Singapore and London.
             </p>
-            <a class="landing-button uk-button uk-button-default" href="subpage.html">Learn more</a>
+            <a class="landing-button uk-button uk-button-default" href="subpage.html">About Me</a>
           </div>
 
           <!-- <img src="img/deco_mark01.png" alt="">
           <img src="img/deco_mark02.png" alt=""> -->
 
       </div>
-      <!--========= Panel 1 =========-->
-      <div id="Second" class="sectionOutline" uk-height-viewport>
+      <!--========= Info Panel 1 =========-->
+      <div id="secondMain" class="sectionOutline" uk-height-viewport>
         <!-- -- nav -- -->
-      <nav
-        class="uk-navbar-container uk-navbar-transparent"
-        uk-navbar
-        uk-sticky
-      >
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li class="uk-transition-toggle" tabindex="0">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">About Me</a></li>
+              <li class="uk-transition-toggle" tabindex="0"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- -- nav -- -->
+        <div>
+          Some info
         </div>
-      </nav>
-
-  
       </div>
+      <!--========= Right Panel =========-->
+      <div id="rightMain" class="sectionOutline uk-flex uk-flex-middle" uk-height-viewport>
 
+        <!---- texts ---->
+        <div class="panel-content">
+          <h1 class="panel-title">
+            Right
+          </h1>
+          <div class="panel-caption">
+            Lorem ipsum dolor
+          </div>
+          <div class="panel-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          </div>
+        </div>
+        <!---- imgs ---->
+        <div class="panel-imgs">
+          <div class="panel-img01">img1</div>
+          <div class="panel-img02">img2</div>
+        </div>
 
-
+      </div>
+      <!--========= Left Panel =========-->      
+      <div id="leftMain" class="sectionOutline uk-flex uk-flex-middle" uk-height-viewport>
+        Left
+      </div>
+      <!--========= Manage Panel =========-->      
+      <div id="manageMain" class="sectionOutline uk-flex uk-flex-middle" uk-height-viewport>
+        Combine
+      </div>
       <!--========= Last Panel =========-->
       <div id="footer" class="sectionOutline uk-background-bottom-center uk-background-contain">
         <div id="footer-container" class="uk-flex uk-flex-middle" uk-height-viewport>
@@ -109,25 +117,19 @@
             </div>
           </div>
         </div>
-        <!-- <div id="footer-animation"> -->
+        <div>
           <img id="ani-rect01"src="img/bg_rectangle01.png" alt="">
+        </div>
+        <div>
           <img id="ani-rect02"src="img/bg_rectangle02.png" alt="">
-        <!-- </div> -->
+        </div>
       </div>
     </div>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <!-- SWUP -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script>
 
-    barba.init({
-      // ...
-    })
-  
-    </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
