@@ -228,6 +228,18 @@ pre {
   width: 25%;
 }
 
+.panel-img01,
+.panel-img02 {
+  height: 50%;
+}
+
+.panel-img01 {
+  background-color: grey;
+}
+.panel-img02 {
+  background-color: green;
+}
+
 /* tablet landscape */
 @media (max-width: 960px) {
   .panel-imgs {
@@ -240,6 +252,16 @@ pre {
     bottom: 0;
     height: 25%;
     width: 100%;
+  }
+  .panel-img01,
+  .panel-img02 {
+    height: 100%;
+    width: 50%;
+  }
+  .panel-img02 {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   .panel-content {
     font-size: small;
