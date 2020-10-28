@@ -160,19 +160,19 @@ pre {
 
 .sectionOutline {
   position: relative;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .outlineTem {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* ------------ */
 /* Landing      */
 /* ------------ */
 #landingPg {
-  background-image: url(../img/bg_Grp_Splash.jpg);
-  background-repeat: no-repeat;
+  background: url(../img/bg_Grp_Splash.jpg) no-repeat;
+
   /* position: relative; */
 }
 
@@ -180,7 +180,7 @@ pre {
   /* position: absolute; */
   /* bottom: 0;
   right: 0; */
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 }
 
 #landing-text {
@@ -205,18 +205,36 @@ pre {
   }
 }
 
-#test {
-  background-image: url(../img/bg_Grp_Splash.jpg);
-  background-repeat: no-repeat;
+/* ------------ */
+/* Panels      */
+/* ------------ */
+
+.panel-caption {
+  padding: 10px 0;
+  /* border: 1px solid pink; */
+}
+
+#rightMain {
+  background: url(../img/bg_right01.png) center center no-repeat;
+}
+
+#leftMain {
+  background: url(../img/bg_left01.png) center center no-repeat;
+}
+
+#leftMain .panel-content {
+  position: absolute;
+  text-align: right;
+  right: 0;
+}
+
+#rightMain .panel-content {
+  position: absolute;
 }
 
 .panel-content {
   width: 40%;
   padding: 5%;
-  border: 1px solid pink;
-}
-.panel-caption {
-  padding: 10px 0;
   /* border: 1px solid pink; */
 }
 
@@ -227,7 +245,13 @@ pre {
   height: 100%;
   width: 25%;
 }
-
+#leftMain .panel-imgs {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  height: 100%;
+  width: 25%;
+}
 .panel-img01,
 .panel-img02 {
   height: 50%;
@@ -240,15 +264,16 @@ pre {
   background-color: green;
 }
 
-/* tablet landscape */
+/*-- tablet landscape --*/
 @media (max-width: 960px) {
   .panel-imgs {
     width: 40%;
   }
 }
-/* mini */
+/*---- mini ----*/
 @media (max-width: 600px) {
-  .panel-imgs {
+  #leftMain .panel-imgs,
+  #rightMain .panel-imgs {
     bottom: 0;
     height: 25%;
     width: 100%;
@@ -263,13 +288,15 @@ pre {
     right: 0;
     top: 0;
   }
-  .panel-content {
+  #leftMain .panel-content,
+  #rightMain .panel-content {
     font-size: small;
     width: 60%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: auto;
   }
 }
 /* ------------ */
@@ -302,11 +329,8 @@ pre {
 /* ------------ */
 
 #aboutLanding {
-  /* background-image: url(../img/bg_abt01.png); */
   background: url(../img/bg_abt02.png) right bottom no-repeat,
     url(../img/bg_abt01.png) left top no-repeat;
-  /* background-repeat: no-repeat; */
-  /* position: relative; */
 }
 
 #aboutLanding img {
