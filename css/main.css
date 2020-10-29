@@ -86,6 +86,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html body {
+  /* background-color: #f6f4f0; */
+  background-color: #bfaf8;
+}
+
 body {
   font-family: "Quicksand", sans-serif !important;
   color: #666;
@@ -171,7 +176,7 @@ pre {
 /* Landing      */
 /* ------------ */
 #landingPg {
-  background: url(../img/bg_Grp_Splash.jpg) no-repeat;
+  background: url(../img/bg_landing_Splash.png) no-repeat;
 
   /* position: relative; */
 }
@@ -206,35 +211,45 @@ pre {
 }
 
 /* ------------ */
-/* Panels      */
+/* Second       */
 /* ------------ */
 
-.panel-caption {
-  padding: 10px 0;
-  /* border: 1px solid pink; */
+#secondMain {
+  background: url(../img/bg_second.png) center center no-repeat;
+  background-size: contain;
+}
+#secondMain .contentBox {
+  background-color: #fefdfb;
+  /* border: 1px solid brown; */
+  width: 90%;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#rightMain {
-  background: url(../img/bg_right01.png) center center no-repeat;
+/* ------------ */
+/* Panels       */
+/* ------------ */
+.topBox_Splash {
+  background: url(../img/bg_topBox_splash.png) left bottom no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
 }
-
-#leftMain {
-  background: url(../img/bg_left01.png) center center no-repeat;
+.botBox_Splash {
+  background: url(../img/bg_botBox_splash.png) right top no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
 }
-
-#leftMain .panel-content {
-  position: absolute;
-  text-align: right;
-  right: 0;
-}
-
-#rightMain .panel-content {
-  position: absolute;
-}
-
 .panel-content {
   width: 40%;
   padding: 5%;
+  /* border: 1px solid pink; */
+}
+
+.panel-caption {
+  padding: 10px 0;
   /* border: 1px solid pink; */
 }
 
@@ -245,6 +260,49 @@ pre {
   height: 100%;
   width: 25%;
 }
+
+#rightMain {
+  background-color: #f4ebe9;
+}
+
+#rightMain .contentBox {
+  position: relative;
+  /* background: url(../img/bg_right01.png) center center no-repeat; */
+  background-color: #fefdfa;
+  /* border: 1px solid brown; */
+  width: 90%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rightMain .panel-content {
+  position: absolute;
+  bottom: 0;
+}
+
+#leftMain {
+  background-color: #e5eced;
+}
+
+#leftMain .contentBox {
+  position: relative;
+  /* background: url(../img/bg_left01.png) center center no-repeat; */
+  background-color: #fefdfa;
+  /* border: 1px solid brown; */
+  width: 90%;
+  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leftMain .panel-content {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  bottom: 0;
+}
+
 #leftMain .panel-imgs {
   position: absolute;
   background-color: black;
@@ -299,6 +357,9 @@ pre {
     padding: auto;
   }
 }
+/* ------------ */
+/* Fourth       */
+/* ------------ */
 /* ------------ */
 /* Footer       */
 /* ------------ */
