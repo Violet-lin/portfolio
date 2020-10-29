@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 html body {
   /* background-color: #f6f4f0; */
-  background-color: #bfaf8;
+  background-color: #fefdfa;
 }
 
 body {
@@ -168,9 +168,9 @@ pre {
   /* border: 1px solid blue; */
 }
 
-.outlineTem {
-  /* border: 1px solid red; */
-}
+/* .outlineTem {
+  border: 1px solid red;
+} */
 
 /* ------------ */
 /* Landing      */
@@ -181,12 +181,12 @@ pre {
   /* position: relative; */
 }
 
-#landing-hero {
-  /* position: absolute; */
-  /* bottom: 0;
+/* #landing-hero { */
+/* position: absolute; */
+/* bottom: 0;
   right: 0; */
-  /* border: 1px solid violet; */
-}
+/* border: 1px solid violet; */
+/* } */
 
 #landing-text {
   position: absolute;
@@ -269,6 +269,7 @@ pre {
   position: relative;
   /* background: url(../img/bg_right01.png) center center no-repeat; */
   background-color: #fefdfa;
+  /* fbfaf8 */
   /* border: 1px solid brown; */
   width: 90%;
   height: 80vh;
@@ -316,10 +317,10 @@ pre {
 }
 
 .panel-img01 {
-  background-color: grey;
+  background-color: black;
 }
 .panel-img02 {
-  background-color: green;
+  background-color: black;
 }
 
 /*-- tablet landscape --*/
@@ -360,6 +361,18 @@ pre {
 /* ------------ */
 /* Fourth       */
 /* ------------ */
+#manageMain {
+  background: url(../img/bg_second.png) center center no-repeat;
+  background-size: contain;
+}
+#manageMain .contentBox {
+  background-color: #fefdfb;
+  /* border: 1px solid brown; */
+  width: 90%;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ------------ */
 /* Footer       */
 /* ------------ */
@@ -371,7 +384,7 @@ pre {
 
 #footer-container {
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #footer-text {
