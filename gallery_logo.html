@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Logos Portfolio 4.0</title>
+    <title>Logo Portfolio 4.0</title>
     <meta name="description" content="Portfolio that is coded by me" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -34,60 +34,62 @@
   </head>
 
   <body>
-    <div id="logoG";>
-        <!-- -- nav -- -->
-        <nav
-          class="uk-navbar-container uk-navbar-transparent"
-          uk-navbar
-          uk-sticky
-        >
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
-              <li class="uk-transition-toggle" tabindex="0">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- -- nav -- -->   
-      <div class="row1 sectionOutline uk-light">
+    <div id="logoG">
+      <!-- -- nav -- -->
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="index.html">Home</a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="index.html#footer">About Me</a></li>
+            <li class="uk-transition-toggle" tabindex="0"><a href="index.html#contactme">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- -- nav -- -->
+      <div class="gallery">
+
+        <div class="row1 sectionOutline uk-light">
           <img src="img/gallery_logo_vh02.jpg" alt="" />
-      </div>
+        </div>
+  
+        <div class="row2 sectionOutline uk-child-width-expand@m uk-grid-collapse" uk-grid>
+            <div class="logoBlack uk-width-1-2@m uk-flex uk-flex-center uk-background-secondary">
+              <img src="img/gallery_logo_vh01_bk.png" alt="" />
+            </div>
+            <div class="logowhite uk-width-1-2@m uk-flex uk-flex-center">
+              <img src="img/gallery_logo_vh01_white.png" alt="" />
+            </div>
+        </div>
+  
+        <div class="row3 sectionOutline uk-flex uk-flex-center uk-light" >
+            <img src="img/gallery_logo_vh01.jpg" alt="" />
+        </div>
+  
+        <div class="row4 sectionOutline text-container uk-card uk-card-body uk-text-center " >
+            <div class="text-title uk-card-title">Logo</div>
+            <div class="text-content uk-align-center">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. -->
+            </div>
+        </div>
 
-      <div class="row2 sectionOutline uk-child-width-expand@m uk-grid-collapse" uk-grid>
-          <div class="logoBlack uk-width-1-2@m uk-flex uk-flex-center uk-background-secondary">
-            <img src="img/gallery_logo_vh01_bk.png" alt="" />
-          </div>
-          <div class="logowhite uk-width-1-2@m uk-flex uk-flex-center">
-            <img src="img/gallery_logo_vh01_white.png" alt="" />
-          </div>
-      </div>
+      </div> 
 
-      <div class="row3 sectionOutline uk-flex uk-flex-center uk-light" >
-          <img src="img/gallery_logo_vh02.jpg" alt="" />
-      </div>
+      <div class="footer-nav sectionOutline uk-flex uk-flex-middle">
 
-      <div class="row4 sectionOutline text-container uk-card uk-card-body uk-text-center " >
-          <div class="text-title uk-card-title">Logos</div>
-          <div class="text-content uk-align-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-      </div>
-
-      <div class="row5 footer-nav sectionOutline uk-grid-collapse uk-child-width-expand" uk-grid>
           <a href="index.html">
-            <div class="footer-navbtn-left uk-card uk-card-body uk-background-center-left uk-text-right">
-              <div class="uk-card-title">
-                Previous
+            <div class="footer-navbtn-left col_main">
+              <div class="footer-content">
+                Back to Home
               </div>  
-              <div>            
+              <!-- <div>            
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="114.57px" height="5.12px" viewBox="0 0 114.57 5.12" style="overflow:visible;enable-background:new 0 0 114.57 5.12;"
                 xml:space="preserve">
@@ -104,15 +106,16 @@
                 c-0.61-0.01-1.65-0.06-2.21-0.07c0.69,0,1.38,0.01,2.07,0.01c-0.11-0.04-0.23-0.07-0.36-0.11c-0.51-0.03-1.03-0.06-1.57-0.06
                 c0.46,0,0.91,0.01,1.37,0.01c-0.34-0.09-0.74-0.17-1.17-0.25c-1.63-0.17-3.19-0.42-4.07-0.43C101.5,0.1,94.35,0.01,87.23,0z"/>
                 </svg>
-              </div>
+              </div> -->
             </div>
           </a>
-          <a href="design.html">
-            <div class="footer-navbtn-right uk-card uk-card-body">
-              <div class="uk-card-title">
-                Next
+
+          <a href="gallery_draw.html">
+            <div class="footer-navbtn-right col_graphics">
+              <div class="footer-content">
+                Go to illustration
               </div>    
-              <div>            
+              <!-- <div>            
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="114.57px" height="5.12px" viewBox="0 0 114.57 5.12" style="overflow:visible;enable-background:new 0 0 114.57 5.12;"
                 xml:space="preserve">
@@ -128,10 +131,11 @@
                 c0.04-0.05-1.13-0.06-1.72-0.06c3.62-0.08,5.62-0.34,2.31-0.63c1.15,0.01,2.77,0.12,3.98,0.08c0,0-0.01,0-0.01,0
                 c-0.61-0.01-1.65-0.06-2.21-0.07c0.69,0,1.38,0.01,2.07,0.01c-0.11-0.04-0.23-0.07-0.36-0.11c-0.51-0.03-1.03-0.06-1.57-0.06
                 c0.46,0,0.91,0.01,1.37,0.01c-0.34-0.09-0.74-0.17-1.17-0.25c-1.63-0.17-3.19-0.42-4.07-0.43C101.5,0.1,94.35,0.01,87.23,0z"/>
-                 </svg>
-              </div>
+                </svg>
+              </div> -->
             </div>
-          </a>   
+          </a>
+
       </div>
 
     </div>
