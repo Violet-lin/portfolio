@@ -96,19 +96,6 @@ body {
   color: #666;
 }
 
-#ani-rect01 {
-  position: absolute;
-  top: 0;
-  /* border: 1px solid grey; */
-}
-
-#ani-rect02 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* border: 1px solid grey; */
-}
-
 h1 {
   font-family: Alice !important;
   color: #666 !important;
@@ -117,9 +104,12 @@ h1 {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  /* border: 1px solid orangered; */
-  margin-top: 0px !important;
   margin: 0 0 6px 0 !important;
+  /* border: 1px solid orangered; */
+}
+h2 {
+  font-family: Alice !important;
+  color: #666 !important;
 }
 
 h3 {
@@ -158,7 +148,25 @@ pre {
   font-weight: 400;
   line-height: 18.5714px;
 }
+/* ------------ */
+/* Customised   */
+/* ------------ */
 
+.col_graphics {
+  background-color: #f4ebe9;
+}
+.col_code {
+  background-color: #e5eced;
+}
+.col_main {
+  background-color: #faf2e2;
+}
+.col_manage {
+  background-color: #e1d4e4;
+}
+/* ------------ */
+/* Useage       */
+/* ------------ */
 .uk-button {
   padding: 0 20px !important;
 }
@@ -168,10 +176,13 @@ pre {
   /* border: 1px solid blue; */
 }
 
-/* .outlineTem {
+.outlineTem {
   border: 1px solid red;
-} */
+}
 
+.objRatio {
+  object-fit: contain;
+}
 /* ------------ */
 /* Landing      */
 /* ------------ */
@@ -210,13 +221,18 @@ pre {
   }
 }
 
+#scrollAni {
+  position: absolute;
+  bottom: 100px;
+}
+
 /* ------------ */
 /* Second       */
 /* ------------ */
 
 #secondMain {
   background: url(../img/bg_second.png) center center no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #secondMain .contentBox {
   background-color: #fefdfb;
@@ -255,15 +271,15 @@ pre {
 
 .panel-imgs {
   position: absolute;
-  background-color: black;
+  background-color: grey;
   right: 0;
   height: 100%;
   width: 25%;
 }
 
-#rightMain {
+/* #rightMain {
   background-color: #f4ebe9;
-}
+} */
 
 #rightMain .contentBox {
   position: relative;
@@ -282,9 +298,9 @@ pre {
   bottom: 0;
 }
 
-#leftMain {
+/* #leftMain {
   background-color: #e5eced;
-}
+} */
 
 #leftMain .contentBox {
   position: relative;
@@ -306,7 +322,7 @@ pre {
 
 #leftMain .panel-imgs {
   position: absolute;
-  background-color: black;
+  background-color: white;
   left: 0;
   height: 100%;
   width: 25%;
@@ -317,20 +333,21 @@ pre {
 }
 
 .panel-img01 {
-  background-color: black;
+  background-color: #faf2e2;
 }
 .panel-img02 {
-  background-color: black;
+  background-color: #faf2e2;
 }
 
 /*-- tablet landscape --*/
 @media (max-width: 960px) {
-  .panel-imgs {
+  #leftMain .panel-imgs,
+  #rightMain .panel-imgs {
     width: 40%;
   }
 }
 /*---- mini ----*/
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
   #leftMain .panel-imgs,
   #rightMain .panel-imgs {
     bottom: 0;
@@ -347,52 +364,75 @@ pre {
     right: 0;
     top: 0;
   }
+
   #leftMain .panel-content,
   #rightMain .panel-content {
     font-size: small;
     width: 60%;
-    /* margin-bottom: 5%; */
+    bottom: auto;
+    position: static;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: auto;
+  }
+  #ani-rect01 {
+    top: 4%;
+    width: 30%;
+  }
+  #ani-rect02 {
+    top: 60%;
+    right: 0;
+    width: 30%;
   }
 }
 /* ------------ */
 /* Fourth       */
 /* ------------ */
 #manageMain {
-  background: url(../img/bg_second.png) center center no-repeat;
-  background-size: contain;
+  background: url(../img/bg_fourth.png) center center no-repeat;
+  background-size: cover;
 }
 #manageMain .contentBox {
   background-color: #fefdfb;
-  /* border: 1px solid brown; */
   width: 90%;
   height: 60vh;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  /* border: 1px solid brown; */
 }
+
+#manageMain .content-text {
+  padding: 45px 10%;
+  /* border: 1px solid brown; */
+}
+
+#manageMain .client img {
+  margin: 10px;
+  border: 1px solid brown;
+}
+
 /* ------------ */
 /* Footer       */
 /* ------------ */
-#footer {
+#contactme {
   background-image: url(../img/bg_footer.png);
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-#footer-container {
+#contactme .container {
   text-align: center;
   /* border: 1px solid red; */
 }
 
-#footer-text {
+#contactme .text {
   font-size: x-large;
   /* border: 1px solid orange; */
 }
 
-.footer-icon {
+.contactme-icon {
   margin: 25px 10px;
   font-size: xx-large;
   /* border: 1px solid orange; */
@@ -402,17 +442,20 @@ pre {
 /* About Me     */
 /* ------------ */
 
-#aboutLanding {
+#aboutMe {
   background: url(../img/bg_abt02.png) right bottom no-repeat,
     url(../img/bg_abt01.png) left top no-repeat;
 }
 
-#aboutLanding img {
+#aboutMe .character {
   padding: 20px 0;
-  border: 1px solid violet;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid violet; */
 }
 
-.aboutLanding-content-text {
+#aboutMe .text-content {
   width: 70%;
 }
 /* ------------ */
@@ -422,19 +465,66 @@ pre {
   background-color: black;
 }
 
-#logoG .text-content {
+#logoG,
+#IllustG,
+#psdtutG,
+#codeG {
+  background-color: #f6f4f0;
+}
+
+/* #logoG  */
+.gallery {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #logoG  */
+.text-content {
   width: 90%;
 }
 
-#logoG .footer-navbtn-left {
-  background: url(../img/bg_navbtn_home.png) no-repeat;
+#psdtutG .text-container {
+  margin-bottom: 20px;
+}
+
+/* ------------------------ */
+/* Footer Nav               */
+/* ------------------------ */
+
+.footer-navbtn-left .footer-content {
+  margin: 80px 150px;
+  text-align: right;
+}
+.footer-navbtn-right .footer-content {
+  margin: 80px 150px;
 }
 
 .footer-navbtn-left,
 .footer-navbtn-right {
   height: 200px;
+  width: 50vw;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.footer-navbtn-left {
+  position: absolute;
+  left: 0;
+}
+.footer-navbtn-right {
+  position: absolute;
+  right: 0;
+}
+.footer-navbtn-left:hover {
+  width: 60vw;
 }
 
+.footer-navbtn-right:hover {
+  width: 60vw;
+}
 .st0 {
   fill: #666;
 }
@@ -447,14 +537,116 @@ pre {
 /* ------------------------ */
 /* Animation Last section   */
 /* ------------------------ */
+/* --- set --- */
+#ani-rect01 {
+  position: absolute;
+  top: 0;
+  /* border: 1px solid grey; */
+}
+
+#ani-rect02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* border: 1px solid grey; */
+}
+/* --- animate --- */
 .bounce {
   transition: all 0.8s;
 }
 
 .bounce:hover {
   transform: translateY(-10px);
+  text-decoration: none;
+}
+/* --- */
+.scrollAni-arrow-sec a {
+  position: relative;
+  bottom: 5px;
+  /* left: 50%; */
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #9e9e9e;
+  font-family: "avenir", sans-serif;
+  /* font   : normal 400 20px/1 'Josefin Sans', sans-serif; */
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
 }
 
+.scrollAni-arrow-sec a:hover {
+  opacity: 0.5;
+}
+
+#scrollAni-arrow a {
+  padding-top: 50px;
+  position: relative;
+  top: 90px;
+}
+
+#scrollAni-arrow a span {
+  position: absolute;
+  top: 0;
+  /* left: 50%; */
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #9e9e9e;
+  border-bottom: 1px solid #9e9e9e;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+#scrollAni-arrow a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+#scrollAni-arrow a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+#scrollAni-arrow a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 /* ==========================================================================
    Transistion Page
    ========================================================================== */
@@ -597,10 +789,11 @@ html.is-animating .transition-wipe {
   *::after {
     background: #fff !important;
     color: #000 !important;
-    /* Black prints faster */
+
     box-shadow: none !important;
     text-shadow: none !important;
   }
+  /* Black prints faster */
 
   a,
   a:visited {
