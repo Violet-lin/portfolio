@@ -164,6 +164,17 @@ pre {
 .col_manage {
   background-color: #e1d4e4;
 }
+
+.thumbSlider {
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 50px 0px;
+}
+
+.thumbSlider H1 {
+  color: white;
+}
+
 /* ------------ */
 /* Useage       */
 /* ------------ */
@@ -473,7 +484,7 @@ pre {
 }
 
 /* #logoG  */
-.gallery {
+.gallery-wrapper {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
