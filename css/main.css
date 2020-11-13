@@ -164,7 +164,12 @@ pre {
 .col_manage {
   background-color: #e1d4e4;
 }
-
+.col_textarea {
+  background-color: #eae7e0;
+}
+.col_orange {
+  background-color: #edd7bf;
+}
 .thumbSlider {
   /* margin-left: auto;
   margin-right: auto; */
@@ -208,6 +213,10 @@ pre {
 }
 .objCover {
   object-fit: cover;
+}
+
+.new-panel {
+  margin-top: 30px !important;
 }
 /* ------------ */
 /* Landing      */
@@ -344,6 +353,7 @@ pre {
   text-align: right;
   right: 0;
   bottom: 0;
+  width: 50%;
 }
 
 #leftMain .panel-imgs {
@@ -493,29 +503,45 @@ pre {
 
 #logoG,
 #IllustG,
+#mascotG,
 #psdtutG,
+#printG,
 #codeG {
   background-color: #f6f4f0;
 }
 
-/* #logoG  */
 .gallery-wrapper {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* #logoG  */
 .text-content {
   width: 90%;
 }
 
 #psdtutG .text-container {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .ads {
   height: 250px;
+}
+
+#printG .textpanel-right .text-container {
+  margin: 0 55px;
+}
+#printG .textpanel-right .text-content {
+  margin-top: 30px;
+  width: auto;
+}
+
+#mascotG .textpanel-right .text-container {
+  margin: 0 55px;
+}
+#mascotG .textpanel-right .text-content {
+  margin-top: 30px;
+  width: auto;
 }
 
 /* ------------------------ */
