@@ -31,6 +31,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b3d88808e5.js" crossorigin="anonymous"></script>
     <meta name="theme-color" content="#fafafa" />
+
+    <!-- Prismjs -->
+    <!-- <link href="hhttps://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css" rel="stylesheet" /> -->
+    <link href="css/prism.css" rel="stylesheet" />
+
   </head>
 
   <body>
@@ -48,32 +53,247 @@
           </ul>
         </div>
       </nav>
-      <!-- -- nav -- -->
+      <!-- -- end nav -- -->  
+ 
       <div class="gallery-wrapper">
+        <!-- header -->          
         <div class="uk-flex uk-flex-center">
           <img class="objRatio" src="img/gallery_ads_header.jpg" alt="" />
         </div>
+        <!-- end header -->
 
-        <div class="row2 sectionOutline uk-flex uk-flex-center uk-light" >
+        <div class="row1 sectionOutline uk-flex uk-flex-center uk-light" >
           <img src="img/gallery_ads_main.jpg" alt="" />
         </div>
 
-        <div class="row3 sectionOutline uk-light">
-          <object class="ads" type="text/html" data="ads/scj_ziploc_starwars_mexico-300x250/index.html"></object>
+        <div class="row2 sectionOutline uk-light uk-child-width-expand@m uk-grid-collapse" uk-grid>
+          <div class="uk-grid-item-match uk-width-auto@m uk-width-1-1@s">
+            <object class="ads" type="text/html" data="ads/scj_ziploc_starwars_mexico-300x250/index.html"></object>
+          </div>
+          <div class="uk-width-expand@m">
+            <pre class="scjSnipplet"><code class="language-javascript">'use strict';
+  
+  /**
+    * Run the animation functions.
+    */
+
+  // if include slider conditional is creating a link between iframe and banner by creating a slider.
+
+  Creative.prototype.start = function () {
+
+    this.banner = document.querySelector('.banner-class');
+
+    this.bannerWidth = this.banner.offsetWidth;
+    this.bannerHeight = this.banner.offsetHeight;
+    this.bannerCenterX = this.bannerWidth * 0.5;
+    this.bannerCenterY = this.bannerHeight * 0.5;
+
+    // Image array for preloading
+    this.images = ['images/bg.jpg', 'images/cockpit.png', 'images/cheerios01.png', 'images/cheerios02.png', 'images/cheerios03.png', 'images/cheerios04.png', 'images/cheerios05.png', 'images/cheerios06.png', 'images/blur1.jpg', 'images/blur2.jpg', 'images/cabineBag.png', 'images/bg_blue.jpg', 'images/sw_logo.png', 'images/f2_text1.png', 'images/f2_text2.png', 'images/f2_bag01.png', 'images/f2_bag02.png', 'images/f2_bag03.png', 'images/f2_bag04.png', 'images/f2_box.png', 'images/cta.png', 'images/cta_arrow.png', 'images/ziploc_logo.png'];
+
+    var _this = this;
+    this.preloadImages(this.images, function () {
+      _this.createElements();
+      _this.setup();
+      _this.hidePreloader();
+      _this.animate();
+      _this.bindEvents();
+    });
+  };
+
+  /**
+    * Create dom elements.
+    */
+  Creative.prototype.createElements = function () {
+    this.bg = this.smartObject({
+      backgroundImage: 'images/bg.jpg',
+      parent: this.banner
+    });
+    this.f1container = this.smartObject({
+      scale: 0.7,
+      parent: this.banner
+    });
+    for (var i = 0; i < 10; i++) {
+      this['cheerios_A' + i] = this.smartObject({
+        id: 'cheeriosA' + i,
+        backgroundImage: 'images/cheerios01.png',
+        scale: 1.5,
+        parent: this.f1container
+      });
+      this['cheerios_B' + i] = this.smartObject({
+        id: 'cheeriosB' + i,
+        backgroundImage: 'images/cheerios02.png',
+        scale: 1.5,
+        parent: this.f1container
+      });
+      this['cheerios_C' + i] = this.smartObject({
+        id: 'cheeriosC' + i,
+        backgroundImage: 'images/cheerios03.png',
+        scale: 1.5,
+        parent: this.f1container
+      });
+      this['cheerios_D' + i] = this.smartObject({
+        id: 'cheeriosD' + i,
+        backgroundImage: 'images/cheerios04.png',
+        scale: 1.5,
+        parent: this.f1container
+      });
+      this['cheerios_E' + i] = this.smartObject({
+        id: 'cheeriosE' + i,
+        backgroundImage: 'images/cheerios05.png',
+        scale: 1.3,
+        parent: this.f1container
+      });
+      this['cheerios_F' + i] = this.smartObject({
+        id: 'cheeriosF' + i,
+        backgroundImage: 'images/cheerios06.png',
+        scale: 1.5,
+        parent: this.f1container
+      });
+    }
+    this.cockpit = this.smartObject({
+      backgroundImage: 'images/cockpit.png',
+      parent: this.banner
+    });
+    this.blur1 = this.smartObject({
+      backgroundImage: 'images/blur1.jpg',
+      autoAlpha: 0,
+      parent: this.banner
+    });
+    this.blur2 = this.smartObject({
+      backgroundImage: 'images/blur2.jpg',
+      autoAlpha: 0,
+      parent: this.banner
+    });
+    this.cabineBag = this.smartObject({
+      backgroundImage: 'images/cabineBag.png',
+      autoAlpha: 0,
+      scale: 1.4,
+      parent: this.banner
+    });
+    this.bg_blue = this.smartObject({
+      backgroundImage: 'images/bg_blue.jpg',
+      autoAlpha: 0,
+      parent: this.banner
+    });
+    this.f2container = this.smartObject({
+      parent: this.banner
+    });
+    this.sw_logo = this.smartObject({
+      backgroundImage: 'images/sw_logo.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_text1 = this.smartObject({
+      backgroundImage: 'images/f2_text1.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_text2 = this.smartObject({
+      backgroundImage: 'images/f2_text2.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_bag04 = this.smartObject({
+      backgroundImage: 'images/f2_bag04.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_bag03 = this.smartObject({
+      backgroundImage: 'images/f2_bag03.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_bag02 = this.smartObject({
+      backgroundImage: 'images/f2_bag02.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_bag01 = this.smartObject({
+      backgroundImage: 'images/f2_bag01.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.f2_box = this.smartObject({
+      backgroundImage: 'images/f2_box.png',
+      autoAlpha: 0,
+      parent: this.f2container
+    });
+    this.cta = this.smartObject({
+      backgroundImage: 'images/cta.png',
+      autoAlpha: 0,
+      parent: this.banner
+    });
+    this.cta_arrow = this.smartObject({
+      backgroundImage: 'images/cta_arrow.png',
+      id: 'cta_arrow',
+      autoAlpha: 0,
+      parent: this.banner
+    });
+    this.ziploc_logo = this.smartObject({
+      backgroundImage: 'images/ziploc_logo.png',
+      autoAlpha: 0,
+      parent: this.banner
+    });
+    this.cta_area = this.smartObject({
+      x: 74,
+      y: 173,
+      width: 155,
+      height: 31,
+      parent: this.banner
+    });
+  };
+
+  /**
+    * Setup initial element states.
+    */
+  Creative.prototype.setup = function () {
+    this.cheerios_A0.set({ x: -78, y: -178 }), this.cheerios_A1.set({ x: -163, y: 77 }), this.cheerios_A2.set({ x: -184, y: -73 }), this.cheerios_A3.set({ x: -12, y: -146 }), this.cheerios_A4.set({ x: 50, y: -261 }), this.cheerios_A5.set({ x: 220, y: 200 }), this.cheerios_A6.set({ x: -270, y: -250 }), this.cheerios_A7.set({ x: -5, y: -400 }), this.cheerios_A8.set({ x: 220, y: -340 }), this.cheerios_A9.set({ x: -150, y: -10 }), this.cheerios_B0.set({ x: 220, y: -70 }), this.cheerios_B1.set({ x: -270, y: -330 }), this.cheerios_B2.set({ x: -300, y: -20 }), this.cheerios_B3.set({ x: 180, y: -410 }), this.cheerios_B4.set({ x: -85, y: -400 }), this.cheerios_B5.set({ x: 220, y: -140 }), this.cheerios_B6.set({ x: -270, y: -190 }), this.cheerios_B7.set({ x: 40, y: -400 }), this.cheerios_B8.set({ x: 220, y: -410 }), this.cheerios_B9.set({ x: 160, y: -235 }), this.cheerios_C0.set({ x: 104, y: 31 }), this.cheerios_C1.set({ x: -102, y: -206 }), this.cheerios_C2.set({ x: -105, y: 76 }), this.cheerios_C3.set({ x: -150, y: 151 }), this.cheerios_C4.set({ x: -181, y: -71 }), this.cheerios_C5.set({ x: 73, y: 120 }), this.cheerios_C6.set({ x: -423, y: -303 }), this.cheerios_C7.set({ x: -149, y: -260 }), this.cheerios_C8.set({ x: 3, y: 174 }), this.cheerios_C9.set({ x: -37, y: -99 }), this.cheerios_D0.set({ x: 100, y: 200 }), this.cheerios_D1.set({ x: 144, y: -31 }), this.cheerios_D2.set({ x: -98, y: 14 }), this.cheerios_D3.set({ x: 165, y: -193 }), this.cheerios_D4.set({ x: -105, y: -94 }), this.cheerios_D5.set({ x: 110, y: -103 }), this.cheerios_D6.set({ x: -84, y: 131 }), this.cheerios_D7.set({ x: 53, y: 15 }), this.cheerios_D8.set({ x: -29, y: -265 }), this.cheerios_D9.set({ x: 52, y: -67 }), this.cheerios_E0.set({ x: 50, y: -31 }), this.cheerios_E1.set({ x: -8, y: -216 }), this.cheerios_E2.set({ x: -85, y: -259 }), this.cheerios_E3.set({ x: -20, y: 21 }), this.cheerios_E4.set({ x: -8, y: -21 }), this.cheerios_E5.set({ x: 74, y: -295 }), this.cheerios_E6.set({ x: 6, y: 72 }), this.cheerios_E7.set({ x: -147, y: -125 }), this.cheerios_E8.set({ x: 102, y: -43 }), this.cheerios_E9.set({ x: 9, y: -281 }), this.cheerios_F0.set({ x: -16, y: 126 }), this.cheerios_F1.set({ x: 104, y: -239 }), this.cheerios_F2.set({ x: -94, y: -291 }), this.cheerios_F3.set({ x: 45, y: -307 }), this.cheerios_F4.set({ x: -100, y: -326 }), this.cheerios_F5.set({ x: 13, y: -84 }), this.cheerios_F6.set({ x: -65, y: -302 }), this.cheerios_F7.set({ x: 25, y: -180 }), this.cheerios_F8.set({ x: -125, y: -167 }), this.cheerios_F9.set({ x: -162, y: -305 }), this.blur2.center();
+    this.f1container.center();
+  };
+
+  /**
+    * Hide the preloader.
+    */
+  Creative.prototype.hidePreloader = function () {
+    TweenMax.to('.preloader', 1, { autoAlpha: 0 });
+  };
+
+  /**
+    * Animation timeline.
+    */
+  Creative.prototype.animate = function () {
+    this.cheerios_ani1 = [];
+    this.cheerios_ani2 = [];
+    this.cheerios_ani3 = [];
+
+    for (var i = 0; i < 10; i++) {
+      this.cheerios_ani2.push(this['cheerios_A' + i]);
+      this.cheerios_ani2.push(this['cheerios_B' + i]);
+      this.cheerios_ani1.push(this['cheerios_C' + i]);
+      this.cheerios_ani3.push(this['cheerios_D' + i]);
+      this.cheerios_ani3.push(this['cheerios_E' + i]);
+      this.cheerios_ani3.push(this['cheerios_F' + i]);
+    }
+
+    this.timeline = new TimelineMax({ repeat: 0 }).addLabel('f1').to(this.bg, 3, { scale: 1.4 }).staggerFrom(this.cheerios_ani1, .8, { scale: 0.1, y: 0, x: -10, ease: Power1.easeIn }, .1, "f1+=0").staggerFrom(this.cheerios_ani2, 1.5, { scale: 0.1, alpha: 0.5, y: 20, x: 0, ease: Power1.easeIn }, .1, "f1+=0.5").staggerFrom(this.cheerios_ani3, .3, { scale: 0.01, ease: Power1.easeIn }, .1, "f1+=1").addLabel('f2').to([this.cockpit, this.f1container], .4, { autoAlpha: 0, scale: .6, ease: Power4.easeIn }, "f2+=0.4").fromTo(this.blur1, .8, { autoAlpha: 0, scale: 2, ease: Power4.easeIn }, { autoAlpha: 1, scale: 1.1, y: 8, x: 2, ease: Power4.easeOut }, "f2+=0.4").to(this.bg, 0.8, { scale: 1 }, "f2+=0.4").to(this.blur1, .1, { autoAlpha: 0 }, "f2+=0.4").to(this.cabineBag, .3, { autoAlpha: 1, scale: 1, ease: Power4.easeIn }, "f2+=0.5").addLabel("f2b", "+=0.2").to(this.cabineBag, .3, { autoAlpha: 0, scale: 0.75, ease: Power4.easeIn }, "f2b+=0").fromTo(this.blur2, .8, { autoAlpha: 0, scale: 1.1, ease: Power4.easeIn }, { autoAlpha: 1, scale: .75, y: 20, ease: Power4.easeOut }, "f2b+=0.1").to([this.blur2], .1, { autoAlpha: 0, ease: Power3.easeOut }, "f2b+=0.5").to(this.bg_blue, 0.5, { autoAlpha: 1, ease: Power3.easeOut }, "f2b+=0.2").addLabel("f3").to([this.sw_logo, this.f2_text1, this.f2_box], .5, { autoAlpha: 1 }, "-=0.2").fromTo(this.f2_bag01, .5, { x: 120, y: 150 }, { autoAlpha: 1, scale: 1, x: 200, y: 119, ease: Elastic.easeOut.config(1, 1) }, "f3").fromTo(this.f2_bag02, .5, { x: 128, y: 157 }, { autoAlpha: 1, scale: 1, x: 148, y: 107, ease: Elastic.easeOut.config(1, 1) }, "f3").fromTo(this.f2_bag03, .5, { x: 97, y: 156 }, { autoAlpha: 1, scale: 1, x: 77, y: 106, ease: Elastic.easeOut.config(1, 1) }, "f3").fromTo(this.f2_bag04, .5, { x: 38, y: 146 }, { autoAlpha: 1, scale: 1, x: 8, y: 116, ease: Elastic.easeOut.config(1, 1) }, "f3").to(this.f2_text1, .5, { autoAlpha: 0 }, "+=2").to(this.f2_text2, .5, { autoAlpha: 1 }).to(this.f2container, .5, { autoAlpha: 0 }, "+=2").addLabel("f4").to([this.ziploc_logo, this.cta, this.cta_arrow], .5, { autoAlpha: 1 });
+
+    this.cta_area.onmouseover = function () {
+      TweenMax.to('#cta_arrow', .25, { x: 5 });
+    };
+    this.cta_area.onmouseout = function () {
+      TweenMax.to('#cta_arrow', .25, { x: 0 });
+    };
+  };</code></pre>
+          </div>
         </div>
 
 
-        <div class="row4 sectionOutline text-container uk-card uk-card-body uk-text-center " >
+
+        <div class="row3 sectionOutline text-container uk-card uk-card-body uk-text-center " >
             <div class="text-title uk-card-title">Banner Ads</div>
             <div class="text-content uk-align-center">
-              Banners for Mexico.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Created engaging banner content for multinational comsumer goods company. To reduce file size and to improve digital customers experience, me and my team choose to use javascript for animation creation, rather than Adobe Animate CC. By using highly reusable code and development best practices, I ensured smooth delivery of assets for a wide range of creative copies in the Mexico and France regions.
             </div>
         </div>
 
@@ -105,12 +325,15 @@
                   </a>
                 </li>
                 <li class="uk-transition-toggle" tabindex="0">
-                  <a href="gallery_animation.html">
+                  <!-- <a href="gallery_animation.html"> -->
                     <img src="img/gallery_animate_thb.jpg" alt="">
-                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center">
+                    <div class="uk-overlay-primary uk-position-cover"></div>
+
+                    <div class="uk-position-center uk-panel"><h4>Coming Soon</h4></div>
+                    <!-- <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center">
                       <p class="uk-h4 uk-margin-remove">Animation</p>
-                    </div>                  
-                  </a>
+                    </div>                   -->
+                  <!-- </a> -->
                 </li>
              
               </ul>
@@ -137,58 +360,26 @@
               <div class="footer-content">
                 Back to Home
               </div>  
-              <!-- <div>            
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="114.57px" height="5.12px" viewBox="0 0 114.57 5.12" style="overflow:visible;enable-background:new 0 0 114.57 5.12;"
-                xml:space="preserve">
-                <path class="st0" d="M87.23,0c-0.01,0.1,0.37,0.2-0.22,0.24c-1.86,0.1-3.35-0.24-5.2-0.14c-0.04,0.05-0.09,0.11-0.13,0.16
-                c-1.44-0.07-2.93-0.15-4.46-0.23c-2.81,0.03-5.61,0.07-8.4,0.12c0.07,0.06,0.11,0.11-0.17,0.13c-1.16,0.04-2.77-0.01-4.43-0.03
-                c-0.25,0.01-0.49,0.02-0.73,0.03c-0.19,0.03-0.24,0.09-0.27,0.13c-0.75,0-1.42-0.02-2.04-0.04C52.99,0.73,44.7,1.08,35.71,1.45
-                c-1.9,0.15-3.8,0.3-5.64,0.37c-2.72,0.06-6.18-0.03-8.82-0.08c0.4,0.58-6.05,0.76-4.78,1.35c-1.76-0.04-4.41-0.11-4.55,0.05
-                c-0.42,0.48-1.79,0.99-6.46,1.22C3.64,4.4,0.84,4.19,0.19,4.29c-1.01,0.15,2.36,0.35,1.35,0.5c6.77,0.11,13.45,0.3,20.19,0.33
-                c1.68,0.01,3.38,0,5.05-0.01c1.68-0.01,3.36-0.02,5.05-0.03c3.37-0.01,6.77-0.02,10.2-0.04c4.67-0.25,36.17-0.39,44.26-0.29
-                c0.25,0,0.49-0.01,0.73-0.01c4.41,0.03,9.78-0.02,13.51-0.24c1.71-0.13,3.46-0.3,5.19-0.46c-0.81-0.09-1.55-0.19-2.2-0.28
-                c1.77,0.01,3.53,0.02,4.21-0.08c3.76-0.24,1.63-0.53,0.18-0.91c-1.04-0.17,0.37-0.43-1.26-0.6c1.17,0.01,1.76,0.01,2.94,0.02
-                c0.13-0.16-3.62,0.08-2.81-0.18c1.13,0.06,2.4-0.04,3.57-0.03c-0.41-0.22-4.07-0.08-3.89-0.29c0.63-0.05,3.3,0.29,3.53,0.02
-                c0.04-0.05-1.13-0.06-1.72-0.06c3.62-0.08,5.62-0.34,2.31-0.63c1.15,0.01,2.77,0.12,3.98,0.08c0,0-0.01,0-0.01,0
-                c-0.61-0.01-1.65-0.06-2.21-0.07c0.69,0,1.38,0.01,2.07,0.01c-0.11-0.04-0.23-0.07-0.36-0.11c-0.51-0.03-1.03-0.06-1.57-0.06
-                c0.46,0,0.91,0.01,1.37,0.01c-0.34-0.09-0.74-0.17-1.17-0.25c-1.63-0.17-3.19-0.42-4.07-0.43C101.5,0.1,94.35,0.01,87.23,0z"/>
-                </svg>
-              </div> -->
             </div>
           </a>
-
           <a href="gallery_logo.html">
             <div class="footer-navbtn-right col_graphics">
               <div class="footer-content">
                 Go to Graphics
-              </div>    
-              <!-- <div>            
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="114.57px" height="5.12px" viewBox="0 0 114.57 5.12" style="overflow:visible;enable-background:new 0 0 114.57 5.12;"
-                xml:space="preserve">
-                <path class="st0" d="M87.23,0c-0.01,0.1,0.37,0.2-0.22,0.24c-1.86,0.1-3.35-0.24-5.2-0.14c-0.04,0.05-0.09,0.11-0.13,0.16
-                c-1.44-0.07-2.93-0.15-4.46-0.23c-2.81,0.03-5.61,0.07-8.4,0.12c0.07,0.06,0.11,0.11-0.17,0.13c-1.16,0.04-2.77-0.01-4.43-0.03
-                c-0.25,0.01-0.49,0.02-0.73,0.03c-0.19,0.03-0.24,0.09-0.27,0.13c-0.75,0-1.42-0.02-2.04-0.04C52.99,0.73,44.7,1.08,35.71,1.45
-                c-1.9,0.15-3.8,0.3-5.64,0.37c-2.72,0.06-6.18-0.03-8.82-0.08c0.4,0.58-6.05,0.76-4.78,1.35c-1.76-0.04-4.41-0.11-4.55,0.05
-                c-0.42,0.48-1.79,0.99-6.46,1.22C3.64,4.4,0.84,4.19,0.19,4.29c-1.01,0.15,2.36,0.35,1.35,0.5c6.77,0.11,13.45,0.3,20.19,0.33
-                c1.68,0.01,3.38,0,5.05-0.01c1.68-0.01,3.36-0.02,5.05-0.03c3.37-0.01,6.77-0.02,10.2-0.04c4.67-0.25,36.17-0.39,44.26-0.29
-                c0.25,0,0.49-0.01,0.73-0.01c4.41,0.03,9.78-0.02,13.51-0.24c1.71-0.13,3.46-0.3,5.19-0.46c-0.81-0.09-1.55-0.19-2.2-0.28
-                c1.77,0.01,3.53,0.02,4.21-0.08c3.76-0.24,1.63-0.53,0.18-0.91c-1.04-0.17,0.37-0.43-1.26-0.6c1.17,0.01,1.76,0.01,2.94,0.02
-                c0.13-0.16-3.62,0.08-2.81-0.18c1.13,0.06,2.4-0.04,3.57-0.03c-0.41-0.22-4.07-0.08-3.89-0.29c0.63-0.05,3.3,0.29,3.53,0.02
-                c0.04-0.05-1.13-0.06-1.72-0.06c3.62-0.08,5.62-0.34,2.31-0.63c1.15,0.01,2.77,0.12,3.98,0.08c0,0-0.01,0-0.01,0
-                c-0.61-0.01-1.65-0.06-2.21-0.07c0.69,0,1.38,0.01,2.07,0.01c-0.11-0.04-0.23-0.07-0.36-0.11c-0.51-0.03-1.03-0.06-1.57-0.06
-                c0.46,0,0.91,0.01,1.37,0.01c-0.34-0.09-0.74-0.17-1.17-0.25c-1.63-0.17-3.19-0.42-4.07-0.43C101.5,0.1,94.35,0.01,87.23,0z"/>
-                </svg>
-              </div> -->
+              </div>
             </div>
           </a>
 
-      </div>
+      </div> <!-- end of footer-nav -->
 
     </div>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/prism.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script> -->
+    
   </body>
 </html>

@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <div>
+    <div id="home">
     <!--========= Landing page =========-->
 
       <div id="landingPg" class="sectionOutline uk-background-top-right uk-background-contain uk-panel uk-flex uk-flex-middle uk-flex-center" uk-parallax="bgy: -300"  uk-height-viewport>
@@ -56,18 +56,20 @@
           </div>
       </div>
 
-
       <!--========= Info Panel 1 =========-->
       <div id="secondMain" class="sectionOutline" uk-height-viewport>
         <!-- -- nav -- -->
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="aboutme.html">About Me</a></li>
-              <li class="uk-transition-toggle" tabindex="0"><a href="#footer">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li><a href="aboutme.html">About Me</a></li>
+                <li class="uk-transition-toggle" tabindex="0"><a href="#footer">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
         <!-- -- nav -- -->
 
         <div class="contentBox uk-flex uk-flex-middle">
@@ -107,7 +109,7 @@
 
         <!---- imgs ---->
         <div class="panel-imgs">
-          <a href="gallery_logo.html"><div class="panel-img01 uk-background-cover uk-background-center-center" data-src="img/gallery_logo_vh02_s.jpg" uk-img></div></a>
+          <a href="gallery_logo.html"><div class="panel-img01 uk-background-cover uk-background-center-right" data-src="img/gallery_logo_vh03_s.jpg" uk-img></div></a>
 
           <a href="gallery_mascot.html"><div class="panel-img02 uk-background-cover uk-background-center-center" data-src="img/gallery_mascot_s.jpg" uk-img></div></a>
          
@@ -150,7 +152,7 @@
       <div id="manageMain" class="sectionOutline uk-flex uk-flex-middle" uk-height-viewport>
        
           <div class="contentBox">
-            <div class="content">
+            <div class="content-wrapper">
               <div class="content-text">
                 With the knowledge that I have gained working within two departments (Design & Development), 
                 <br/>I understand the technical restrictions and communication barriers within a project.
@@ -160,15 +162,14 @@
                 Orchestrated end-to-end creative production process from creative concept to campaign launch across a team of developers and freelance designers for clients such as Sony, SAP and Amazon.
               </div>
               <div class="content-client uk-flex uk-flex-center">          
-                <img width=40px src="img/logo-sap.svg" alt="">
-                <img width=50px src="img/logo-amazon.svg" alt="">
-                <img width=55px src="img/logo-sony.svg" alt="">
+                <img width=48px src="img/logo-sap.svg" alt="">
+                <img width=65px src="img/logo-amazon.svg" alt="">
+                <img width=75px src="img/logo-sony.svg" alt="">
               </div>
             </div>
-          </div>
+            </div>
       </div>
-
-      <!--========= Last Panel =========-->
+     <!--========= Last Panel =========-->
       <div id="contactme" class="sectionOutline uk-background-bottom-center uk-background-contain">
         <div class="container uk-flex uk-flex-middle" uk-height-viewport>
           <div class="content uk-align-center uk-text-center">
@@ -186,16 +187,14 @@
         </div>
 
         <div>
-          <img id="ani-rect01"src="img/bg_rectangle01.png" alt="">
+          <!-- <img id="ani-rect01"src="img/bg_rectangle01.png" alt=""> -->
         </div>
         <div>
-          <img id="ani-rect02"src="img/bg_rectangle02.png" alt="">
+          <!-- <img id="ani-rect02"src="img/bg_rectangle02.png" alt=""> -->
         </div>
 
-      </div>
-      
+      </div>      
     </div>
-
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

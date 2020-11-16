@@ -96,6 +96,18 @@ body {
   color: #666;
 }
 
+#home {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+#home .sectionOutline {
+  scroll-snap-align: start;
+  /* height: 100vh; */
+}
+
 h1 {
   font-family: Alice !important;
   color: #666 !important;
@@ -141,7 +153,6 @@ blockquote {
 }
 
 pre {
-  /* font-family: Alice; */
   font-size: 13px;
   font-style: normal;
   font-variant: normal;
@@ -432,21 +443,25 @@ pre {
 #manageMain .contentBox {
   background-color: #fefdfb;
   width: 90%;
-  height: 60vh;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* border: 1px solid brown; */
+  border: 1px solid brown;
+  padding: 8% 10%;
 }
+
+/* #manageMain .content-wrapper {
+  border: 1px solid pink;
+} */
 
 #manageMain .content-text {
-  padding: 45px 10%;
   /* border: 1px solid brown; */
+  margin-bottom: 10px;
 }
-
-#manageMain .client img {
-  margin: 10px;
-  border: 1px solid brown;
+#manageMain .content-client img {
+  margin: 18px;
+  /* border: 1px solid blue; */
 }
 
 /* ------------ */
@@ -483,11 +498,9 @@ pre {
     url(../img/bg_abt01.png) left top no-repeat;
 }
 
-#aboutMe .character {
+#aboutMe .character img {
   padding: 20px 0;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 180px;
   /* border: 1px solid violet; */
 }
 
@@ -528,6 +541,11 @@ pre {
   height: 250px;
 }
 
+pre.scjSnipplet {
+  max-height: 250px;
+  margin-top: 0 !important;
+}
+
 #printG .textpanel-right .text-container {
   margin: 0 55px;
 }
@@ -540,6 +558,14 @@ pre {
   margin: 0 55px;
 }
 #mascotG .textpanel-right .text-content {
+  margin-top: 30px;
+  width: auto;
+}
+
+#psdtutG .textpanel-right .text-container {
+  margin: 0 55px;
+}
+#psdtutG .textpanel-right .text-content {
   margin-top: 30px;
   width: auto;
 }
