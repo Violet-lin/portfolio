@@ -203,6 +203,9 @@ pre {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.uk-navbar-nav li {
+  white-space: nowrap;
+}
 /* ------------ */
 /* Useage       */
 /* ------------ */
