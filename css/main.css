@@ -241,14 +241,14 @@ pre {
   /* position: relative; */
 }
 
-/* #landing-hero { */
+/* #landingimg { */
 /* position: absolute; */
 /* bottom: 0;
   right: 0; */
 /* border: 1px solid violet; */
 /* } */
 
-#landing-text {
+#landingtxt__pocket {
   position: absolute;
   left: 10%;
   width: 30%;
@@ -258,14 +258,14 @@ pre {
 
 /* @media only screen and (max-width: 640px) */
 @media (max-width: 640px) {
-  #landing-text {
+  #landingtxt__pocket {
     position: absolute;
     left: auto;
     width: 60%;
     text-align: center;
     /* border: 1px solid brown; */
   }
-  #landing-hero {
+  #landingimg {
     display: none;
   }
 }
@@ -279,11 +279,11 @@ pre {
 /* Second       */
 /* ------------ */
 
-#secondMain {
+#secondIntro {
   background: url(../img/bg_second.png) center center no-repeat;
   background-size: cover;
 }
-#secondMain .contentBox {
+#secondIntro .content__brim {
   background-color: #fefdfb;
   /* border: 1px solid brown; */
   width: 90%;
@@ -295,25 +295,25 @@ pre {
 /* ------------ */
 /* Panels       */
 /* ------------ */
-.topBox_Splash {
+.topBox_splash {
   background: url(../img/bg_topBox_splash.png) left bottom no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
   height: 160px;
 }
-.botBox_Splash {
+.botBox_splash {
   background: url(../img/bg_botBox_splash.png) right top no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
   height: 160px;
 }
-.panel-content {
+.paneltxt__pocket {
   width: 40%;
   padding: 5%;
   /* border: 1px solid pink; */
 }
 
-.panel-caption {
+.paneltxt__caption {
   padding: 10px 0;
   /* border: 1px solid pink; */
 }
@@ -330,7 +330,7 @@ pre {
   background-color: #f4ebe9;
 } */
 
-#rightMain .contentBox {
+#rightMain .content__brim {
   position: relative;
   /* background: url(../img/bg_right01.png) center center no-repeat; */
   background-color: #fefdfa;
@@ -342,7 +342,7 @@ pre {
   margin-right: auto;
 }
 
-#rightMain .panel-content {
+#rightMain .paneltxt__pocket {
   position: absolute;
   bottom: 0;
 }
@@ -351,7 +351,7 @@ pre {
   background-color: #e5eced;
 } */
 
-#leftMain .contentBox {
+#leftMain .content__brim {
   position: relative;
   /* background: url(../img/bg_left01.png) center center no-repeat; */
   background-color: #fefdfa;
@@ -362,7 +362,7 @@ pre {
   margin-right: auto;
 }
 
-#leftMain .panel-content {
+#leftMain .paneltxt__pocket {
   position: absolute;
   text-align: right;
   right: 0;
@@ -377,15 +377,15 @@ pre {
   height: 100%;
   width: 25%;
 }
-.panel-img01,
-.panel-img02 {
+.panel-img__01,
+.panel-img__02 {
   height: 50%;
 }
 
-.panel-img01 {
+.panel-img__01 {
   background-color: #faf2e2;
 }
-.panel-img02 {
+.panel-img__02 {
   background-color: #faf2e2;
 }
 
@@ -404,19 +404,19 @@ pre {
     height: 25%;
     width: 100%;
   }
-  .panel-img01,
-  .panel-img02 {
+  .panel-img__01,
+  .panel-img__02 {
     height: 100%;
     width: 50%;
   }
-  .panel-img02 {
+  .panel-img__02 {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  #leftMain .panel-content,
-  #rightMain .panel-content {
+  #leftMain .paneltxt__pocket,
+  #rightMain .paneltxt__pocket {
     font-size: small;
     width: 60%;
     bottom: auto;
@@ -443,7 +443,7 @@ pre {
   background: url(../img/bg_fourth.png) center center no-repeat;
   background-size: cover;
 }
-#manageMain .contentBox {
+#manageMain .content__brim {
   background-color: #fefdfb;
   width: 90%;
   height: auto;
@@ -454,15 +454,15 @@ pre {
   padding: 8% 10%;
 }
 
-/* #manageMain .content-wrapper {
+/* #manageMain .managetxt__pocket {
   border: 1px solid pink;
 } */
 
-#manageMain .content-text {
+#manageMain .managetxt__text {
   /* border: 1px solid brown; */
   margin-bottom: 10px;
 }
-#manageMain .content-client img {
+#manageMain .managetxt__client img {
   margin: 18px;
   /* border: 1px solid blue; */
 }
