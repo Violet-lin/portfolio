@@ -45,7 +45,7 @@ tl.from("#landingPg", {
 /*=========================
   Last Panel
   =========================*/
-
+/*
 gsap.from("#ani-rect01", {
   scrollTrigger: {
     trigger: "#ani-rect01",
@@ -70,3 +70,4 @@ gsap.from("#ani-rect02", {
   rotation: 25,
   duration: 1,
 });
+*/
