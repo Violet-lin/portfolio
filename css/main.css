@@ -501,7 +501,7 @@ pre {
     url(../img/bg_abt01.png) left top no-repeat;
 }
 
-#aboutMe .character img {
+#aboutMe .aboutme__character img {
   padding: 20px 0;
   width: 180px;
   /* border: 1px solid violet; */
