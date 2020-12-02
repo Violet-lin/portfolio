@@ -87,7 +87,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 html body {
-  /* background-color: #f6f4f0; */
   background-color: #fefdfa;
 }
 
@@ -191,6 +190,10 @@ pre {
   color: white;
 }
 
+/* ------------ */
+/* overwrite    */
+/* ------------ */
+
 .uk-navbar-container .navItem {
   display: flex;
   align-items: center;
@@ -206,12 +209,14 @@ pre {
 .uk-navbar-nav li {
   white-space: nowrap;
 }
-/* ------------ */
-/* Useage       */
-/* ------------ */
+
 .uk-button {
   padding: 0 20px !important;
 }
+
+/* ------------ */
+/* Usage       */
+/* ------------ */
 
 .section__outline {
   position: relative;
@@ -229,6 +234,10 @@ pre {
   object-fit: cover;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
 .new-panel {
   margin-top: 30px !important;
 }
@@ -237,8 +246,6 @@ pre {
 /* ------------ */
 #landingPg {
   background: url(../img/bg_landing_Splash.png) no-repeat;
-
-  /* position: relative; */
 }
 
 /* #landingimg { */
@@ -256,7 +263,6 @@ pre {
   /* border: 1px solid brown; */
 }
 
-/* @media only screen and (max-width: 640px) */
 @media (max-width: 640px) {
   #landingtxt__pocket {
     position: absolute;
@@ -276,7 +282,7 @@ pre {
 }
 
 /* ------------ */
-/* Second       */
+/* SecondIntro  */
 /* ------------ */
 
 #secondIntro {
@@ -307,6 +313,7 @@ pre {
   background-size: contain;
   height: 160px;
 }
+
 .paneltxt__pocket {
   width: 40%;
   padding: 5%;
@@ -326,20 +333,24 @@ pre {
   width: 25%;
 }
 
-/* #rightMain {
-  background-color: #f4ebe9;
-} */
+.panelthb__01,
+.panelthb__02 {
+  height: 50%;
+}
+
+.panelthb__01,
+.panelthb__02 {
+  background-color: #faf2e2;
+}
 
 #rightMain .content__brim {
   position: relative;
-  /* background: url(../img/bg_right01.png) center center no-repeat; */
   background-color: #fefdfa;
-  /* fbfaf8 */
-  /* border: 1px solid brown; */
   width: 90%;
   height: 80vh;
   margin-left: auto;
   margin-right: auto;
+  /* border: 1px solid brown; */
 }
 
 #rightMain .paneltxt__pocket {
@@ -347,19 +358,14 @@ pre {
   bottom: 0;
 }
 
-/* #leftMain {
-  background-color: #e5eced;
-} */
-
 #leftMain .content__brim {
   position: relative;
-  /* background: url(../img/bg_left01.png) center center no-repeat; */
   background-color: #fefdfa;
-  /* border: 1px solid brown; */
   width: 90%;
   height: 80vh;
   margin-left: auto;
   margin-right: auto;
+  /* border: 1px solid brown; */
 }
 
 #leftMain .paneltxt__pocket {
@@ -377,17 +383,6 @@ pre {
   height: 100%;
   width: 25%;
 }
-.panelthb__01,
-.panelthb__02 {
-  height: 50%;
-}
-
-.panelthb__01 {
-  background-color: #faf2e2;
-}
-.panelthb__02 {
-  background-color: #faf2e2;
-}
 
 /*-- tablet landscape --*/
 @media (max-width: 960px) {
@@ -398,6 +393,10 @@ pre {
 }
 /*---- mini ----*/
 @media only screen and (max-width: 600px) and (orientation: portrait) {
+  .paneltxt__area {
+    height: 80%;
+  }
+
   #leftMain .panelthb,
   #rightMain .panelthb {
     bottom: 0;
@@ -426,6 +425,7 @@ pre {
     margin-right: auto;
     padding: auto;
   }
+
   #ani-rect01 {
     top: 4%;
     width: 30%;
