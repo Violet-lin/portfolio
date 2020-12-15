@@ -577,16 +577,24 @@ pre.scjSnipplet {
 /* Footer Nav               */
 /* ------------------------ */
 
-.footer-navbtn-left .footer-content {
+/* .footer-navbtn-left .footer-content {
   margin: 80px 150px;
   text-align: right;
-}
-.footer-navbtn-right .footer-content {
+} */
+/* .footer-navbtn-right .footer-content {
   margin: 80px 150px;
+} */
+
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
 }
 
 .footer-navbtn-left,
 .footer-navbtn-right {
+  display: flex; /* uk-flex */
+  align-items: center; /* uk-flex-middle */
   height: 200px;
   width: 50vw;
   -webkit-transition: all 1s ease;
