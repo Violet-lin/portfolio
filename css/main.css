@@ -297,6 +297,34 @@ pre {
   margin-left: auto;
   margin-right: auto;
 }
+/* ------------ */
+/* Panels       */
+/* ------------ */
+#rightMain .panelslide {
+  position: absolute;
+  right: 0;
+  width: 60vw;
+}
+
+#rightMain .paneltxtC__area {
+  position: absolute;
+  left: 15vw;
+  padding: 20px;
+  /* border: 1px solid red; */
+}
+
+#leftMain .panelslide {
+  position: absolute;
+  left: 0;
+  width: 60vw;
+}
+
+#leftMain .paneltxtC__area {
+  position: absolute;
+  right: 15vw;
+  padding: 20px;
+  /* border: 1px solid red; */
+}
 
 /* ------------ */
 /* Panels       */
@@ -445,7 +473,7 @@ pre {
 }
 #manageMain .content__brim {
   background-color: #fefdfb;
-  width: 90%;
+  width: 70vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
