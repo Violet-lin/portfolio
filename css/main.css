@@ -602,6 +602,10 @@ pre.scjSnipplet {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+
+  font-size: x-large;
+  color: #999;
+  font-weight: 400;
 }
 .footer-navbtn-left {
   position: absolute;
@@ -613,10 +617,12 @@ pre.scjSnipplet {
 }
 .footer-navbtn-left:hover {
   width: 60vw;
+  color: #666;
 }
 
 .footer-navbtn-right:hover {
   width: 60vw;
+  color: #666;
 }
 .st0 {
   fill: #666;
