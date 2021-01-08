@@ -1,0 +1,85 @@
+/* -------------- */
+/* Colour Palette */
+/* -------------- */
+
+.col_graphics {
+  background-color: #f4ebe9;
+}
+.col_code {
+  background-color: #e5eced;
+}
+.col_main {
+  background-color: #faf2e2;
+}
+.col_manage {
+  background-color: #e1d4e4;
+}
+.col_textarea {
+  background-color: #eae7e0;
+}
+.col_orange {
+  background-color: #edd7bf;
+}
+.col_offwhite {
+  background-color: #fff;
+  opacity: 0.9;
+}
+.col_hover {
+  background-color: #999;
+}
+.col_text {
+  background-color: #666;
+}
+/* ------------ */
+/* Background       */
+/* ------------ */
+
+.pink_splash {
+  background: url(../img/bg_right.png) center center no-repeat;
+  background-size: contain;
+}
+
+.blue_splash {
+  background: url(../img/bg_left.png) right top no-repeat;
+  background-size: contain;
+}
+
+.topBox_splash {
+  background: url(../img/bg_topBox_splash.png) left bottom no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+}
+.botBox_splash {
+  background: url(../img/bg_botBox_splash.png) right top no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+}
+/* ------------ */
+/* Usage       */
+/* ------------ */
+
+.section__outline {
+  position: relative;
+  /* border: 1px solid blue; */
+}
+
+.tem--outline {
+  border: 1px solid red;
+}
+
+.objRatio {
+  object-fit: contain;
+}
+.objCover {
+  object-fit: cover;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.new-panel {
+  margin-top: 30px !important;
+}
