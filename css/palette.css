@@ -22,7 +22,7 @@
 }
 .col_offwhite {
   background-color: #fff;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 .col_hover {
   background-color: #999;
