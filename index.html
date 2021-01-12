@@ -33,9 +33,25 @@
   <body>
     <div id="home">
     <!--========= Landing page =========-->
-
-      <div id="landingPg" class="section__outline uk-background-top-right uk-background-contain uk-panel uk-flex uk-flex-middle uk-flex-center" uk-parallax="bgy: -300"  uk-height-viewport>
-        <div id="landingimg" class=""><img src="img/landingHero.png" alt=""></div>
+      <div id="landingPg" class="section__outline uk-background-top-right uk-background-contain uk-flex uk-flex-middle uk-flex-center" uk-parallax="bgy: -300"  uk-height-viewport>
+        <!-- -- side nav -- -->
+        <!-- <div class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+          <div class="uk-navbar-right">
+              <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+          </div>
+        </div>
+        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+          <div class="uk-offcanvas-bar">
+              <ul class="uk-nav">
+                <li class="uk-text-large uk-transition-toggle" tabindex="0"><a href="#footer">Contact</a></li>
+                <li class="uk-text-large"><a href="aboutme.html">About Me</a></li>
+              </ul>
+          </div>
+        </div> -->
+        <!-- -- nav -- -->
+        <!-- <div class="uk-panel uk-flex uk-flex-middle uk-flex-center"> -->
+          <div id="landingimg" class=""><img src="img/landingHero.png" alt="">
+          </div>
           <div id="landingtxt__pocket" class="transition-fade">
             <h3 class="landingtxt__01">Hi, I'm Violet.</h3>
             <h1 class="landingtxt__02">Bringing together 
@@ -49,26 +65,24 @@
             <div id="scrollAni-arrow" class="scrollAni-arrow-sec">
               <a href="#secondIntro"><span></span><span></span><span></span></a>
             </div>
-            <!-- <div class="scrollAni_text  scrollAni-arrow-sec">
-              <a href="#secondIntro">scroll</a>
-            </div> -->
           </div>
+        <!-- </div> -->
       </div>
 
       <!--========= Info Panel 1 =========-->
       <div id="secondIntro" class="section__outline" uk-height-viewport>
-        <!-- -- nav -- -->
+        <!-- -- nav -- uk-visible@s-->
         <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
           <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav">
+              <ul class="uk-navbar-nav "> 
                 <li><a href="aboutme.html">About Me</a></li>
-                <li class="uk-transition-toggle" tabindex="0"><a href="#footer">Contact</a></li>
+                <li class="uk-text-large uk-transition-toggle" tabindex="0"><a href="#footer">Contact</a></li>
               </ul>
             </div>
           </nav>
         </div>
-        <!-- -- nav -- -->
+
 
         <div class="content__brim uk-flex uk-flex-middle">
           <div class="intro__pocket uk-align-center uk-text-center">
@@ -90,7 +104,6 @@
           <div uk-slideshow="animation: pull; autoplay: true; ratio: false" >
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-        
               <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 33">
                 <li>
                   <a href="gallery_logo.html"><img src="img/gallery_logo_vh02_s.jpg" alt="" uk-cover></a>      
@@ -105,11 +118,19 @@
                   <a href="gallery_print.html"><img src="img/gallery_card_main.jpg" alt="" uk-cover></a>      
                 </li>
               </ul>
-      
             </div>
         
-            <ul class="uk-slideshow-nav uk-dotnav uk-flex-left@s uk-flex-center uk-margin"></ul>
-        
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-left@m uk-visible@m uk-margin"></ul>
+
+            <div class="uk-light uk-position-bottom-center uk-position-small uk-hidden@m">
+              <ul class="uk-dotnav">
+                  <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                  <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                  <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+                  <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              </ul>
+            </div>  
+
           </div>        
         </div>
         <!---- texts ---->        
@@ -139,23 +160,27 @@
           <div uk-slideshow="animation: pull; autoplay: true; ratio: false">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-        
-                <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 33">
-                    <li>
-                      <a href="gallery_ad.html"><img src="img/gallery_ads_main.jpg" alt= "" uk-cover></a>      
-                    </li>
-                    <li>
-                      <a href="gallery_psdtut.html"><img src="img/gallery_psdtut01_s.jpg" alt="" uk-cover></a>      
-                    </li>
-                    <li>
-                      <a href="gallery_game.html"><img src="img/gallery_game_s.jpg" alt="" uk-cover></a>      
-                    </li>
-                </ul>
-        
+              <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 33">
+                  <li>
+                    <a href="gallery_ad.html"><img src="img/gallery_ads_main.jpg" alt= "" uk-cover></a>      
+                  </li>
+                  <li>
+                    <a href="gallery_psdtut.html"><img src="img/gallery_psdtut01_s.jpg" alt="" uk-cover></a>      
+                  </li>
+                  <li>
+                    <a href="gallery_game.html"><img src="img/gallery_game_s.jpg" alt="" uk-cover></a>      
+                  </li>
+              </ul>
             </div>
         
-            <ul class="uk-slideshow-nav uk-dotnav uk-flex-right@s uk-flex-center uk-margin"></ul>
-        
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-right@m uk-visible@m uk-margin"></ul>
+            <div class="uk-light uk-position-bottom-center uk-position-small uk-hidden@m">
+              <ul class="uk-dotnav">
+                  <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                  <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                  <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+              </ul>
+            </div>        
           </div>        
         </div>
         <!---- texts ---->        

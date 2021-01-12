@@ -175,7 +175,10 @@ pre {
 /* ------------ */
 /* overwrite    */
 /* ------------ */
-
+/* .uk-dotnav {
+  position: relative;
+  z-index: 500;
+} */
 .uk-navbar-container .navItem {
   display: flex;
   align-items: center;
@@ -283,7 +286,7 @@ pre {
 }
 
 /*---- mini ----*/
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 960px) {
   .paneltxtC__area {
     position: absolute;
     bottom: 0;
@@ -586,14 +589,6 @@ pre.scjSnipplet {
 /* ------------------------ */
 /* Footer Nav               */
 /* ------------------------ */
-
-/* .footer-navbtn-left .footer-content {
-  margin: 80px 150px;
-  text-align: right;
-} */
-/* .footer-navbtn-right .footer-content {
-  margin: 80px 150px;
-} */
 
 .footer-content {
   margin-left: auto;
