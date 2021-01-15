@@ -95,7 +95,7 @@ body {
   color: #666;
 }
 
-#home {
+/* #home {
   overflow: scroll;
   height: 100vh;
   scroll-snap-type: mandatory;
@@ -104,8 +104,7 @@ body {
 }
 #home .section__outline {
   scroll-snap-align: start;
-  /* height: 100vh; */
-}
+} */
 
 h1 {
   font-family: Alice !important;
@@ -460,7 +459,7 @@ pre {
   background: url(../img/bg_fourth.png) center center no-repeat;
   background-size: cover;
 }
-#manageMain .content__brim {
+#manageMain .content .content__brim {
   background-color: #fefdfb;
   width: 70vw;
   height: auto;
@@ -475,12 +474,15 @@ pre {
   border: 1px solid pink;
 } */
 
+/* 
 #manageMain .managetxt__text {
-  /* border: 1px solid brown; */
-  margin-bottom: 10px;
-}
+  border: 1px solid brown;
+  margin-bottom: 10px; 
+}*/
+
 #manageMain .managetxt__client img {
-  margin: 18px;
+  margin: 2%;
+  /* margin: 18px; */
   /* border: 1px solid blue; */
 }
 
