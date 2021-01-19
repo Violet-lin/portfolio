@@ -458,6 +458,7 @@ pre {
 #manageMain {
   background: url(../img/bg_fourth.png) center center no-repeat;
   background-size: cover;
+  margin-bottom: 20%;
 }
 #manageMain .content .content__brim {
   background-color: #fefdfb;
@@ -482,6 +483,7 @@ pre {
 
 #manageMain .managetxt__client img {
   margin: 2%;
+  max-height: 65px;
   /* margin: 18px; */
   /* border: 1px solid blue; */
 }
