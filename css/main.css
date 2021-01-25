@@ -591,6 +591,21 @@ pre.scjSnipplet {
   width: auto;
 }
 
+.thumbNav {
+  padding: 5%;
+}
+.thumbNav img {
+  /* border-radius: 50%; */
+  width: 80px;
+  height: 80px;
+}
+.thumbNav a:hover {
+  text-decoration: none;
+}
+
+.cirNav {
+  border-radius: 50%;
+}
 /* ------------------------ */
 /* Footer Nav               */
 /* ------------------------ */
