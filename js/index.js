@@ -1,6 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 // gsap.registerPlugin(MotionPathPlugin);
 /*=========================
+  Preloader
+  =========================*/
+
+window.onload = function(){ document.querySelector(".preloader").style.display = "none"; }
+
+/*=========================
   Landing Panel
   =========================*/
 gsap.from("#landingimg", {
