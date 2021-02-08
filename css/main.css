@@ -566,7 +566,7 @@ pre {
 
 .footer .footer-pocket {
   position: relative;
-  top: 10px;
+  top: 9px;
 }
 #contactme {
   background-image: url(../img/bg_footer.png);
@@ -606,7 +606,8 @@ pre {
 }
 
 #aboutMe .text-content {
-  width: 70%;
+  /* width: 70%; */
+  max-width: 60%;
 }
 /* ------------ */
 /* Gallery      */
