@@ -17,6 +17,14 @@ html {
   line-height: 1.4;
 }
 
+.uk-link,
+a {
+  color: #999 !important;
+}
+.uk-link,
+a:hover {
+  color: #666 !important;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -544,6 +552,22 @@ pre {
 /* ------------ */
 /* Footer       */
 /* ------------ */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #e6e6e6;
+  font-size: small;
+  text-align: center;
+}
+
+.footer .footer-pocket {
+  position: relative;
+  top: 10px;
+}
 #contactme {
   background-image: url(../img/bg_footer.png);
   background-repeat: no-repeat;
@@ -662,7 +686,9 @@ pre.scjSnipplet {
 /* ------------------------ */
 /* Footer Nav               */
 /* ------------------------ */
-
+.logo-module {
+  margin-left: 5%;
+}
 .footer-content {
   margin-left: auto;
   margin-right: auto;
@@ -730,7 +756,12 @@ pre.scjSnipplet {
 /* --- animate --- */
 .bounce {
   transition: all 0.8s;
+  color: #1e87f0;
 }
+/* .bounce .uk-link,
+.bounce a {
+  color: #1e87f0 !important;
+} */
 
 .bounce:hover {
   transform: translateY(-10px);
