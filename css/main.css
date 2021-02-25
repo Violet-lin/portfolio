@@ -381,7 +381,7 @@ pre {
 
   #leftMain .paneltxtC__area {
     background: url(../img/bg_left.png) left center no-repeat;
-    object-fit: contain;
+    background-size: contain;
     background-color: #fff;
     left: unset;
     right: unset;
