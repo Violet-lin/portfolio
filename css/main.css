@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 .uk-link,
@@ -218,6 +219,10 @@ pre {
   font-weight: 400;
   line-height: 18.5714px;
 }
+
+.project__context {
+  font-size: 14px;
+}
 /* ------------ */
 /* Customised   */
 /* ------------ */
@@ -235,10 +240,7 @@ pre {
 /* ------------ */
 /* overwrite    */
 /* ------------ */
-/* .uk-dotnav {
-  position: relative;
-  z-index: 500;
-} */
+
 .uk-navbar-container .navItem {
   display: flex;
   align-items: center;
@@ -266,13 +268,6 @@ pre {
   background: url(../img/bg_landing_Splash.png) no-repeat;
 }
 
-/* #landingimg { */
-/* position: absolute; */
-/* bottom: 0;
-  right: 0; */
-/* border: 1px solid violet; */
-/* } */
-
 #landingtxt__pocket {
   position: absolute;
   left: 10%;
@@ -281,6 +276,7 @@ pre {
   /* border: 1px solid brown; */
 }
 
+/* Mobile view has no hero image and everything centerialise */
 @media (max-width: 640px) {
   #landingtxt__pocket {
     position: absolute;
@@ -288,6 +284,10 @@ pre {
     width: 60%;
     text-align: center;
     /* border: 1px solid brown; */
+  }
+  .landingtxt__btn__pocket {
+    /* border: rgb(19, 226, 36) 1px solid; */
+    text-align: center;
   }
   #landingimg {
     display: none;
@@ -298,7 +298,16 @@ pre {
   position: absolute;
   bottom: 100px;
 }
-
+.landingtxt__btn__pocket {
+  position: absolute;
+  /* border: rgb(33, 19, 226) 1px solid; */
+}
+.deco_btn_dot {
+  position: absolute;
+  bottom: -55px;
+  left: -50px;
+  border: blueviolet 1px solid;
+}
 /* ------------ */
 /* SecondIntro  */
 /* ------------ */
@@ -308,7 +317,7 @@ pre {
   background-size: cover;
 }
 #secondIntro .content__brim {
-  background-color: #fefdfb;
+  /* background-color: #fefdfb; */
   /* border: 1px solid brown; */
   width: 90%;
   height: 60vh;
@@ -347,6 +356,11 @@ pre {
 
 /*---- mini ----*/
 @media only screen and (max-width: 960px) {
+  .panelslide,
+  .paneltxtC__area {
+    border: orange 1px solid;
+  }
+
   .paneltxtC__area {
     position: absolute;
     bottom: 0;
@@ -385,6 +399,10 @@ pre {
     background-color: #fff;
     left: unset;
     right: unset;
+  }
+  .dotnav__mobile {
+    border: orange 1px solid;
+    margin-bottom: 10px !important;
   }
 }
 
@@ -462,6 +480,7 @@ pre {
 }
 
 /*-- tablet landscape --*/
+
 @media (max-width: 960px) {
   #leftMain .panelthb,
   #rightMain .panelthb {
@@ -511,6 +530,18 @@ pre {
     top: 60%;
     right: 0;
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .panelslide,
+  .paneltxtC__area {
+    border: blueviolet 1px solid;
+  }
+  .dotnav__mobile {
+    border: blueviolet 1px solid;
+    bottom: 10px !important;
+    /* margin-bottom: 8vh */
   }
 }
 /* ------------ */
