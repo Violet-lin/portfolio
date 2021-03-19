@@ -34,23 +34,8 @@
     <div class="preloader"> <img class="preloader-icon" src="img/Infinity-1.8s-200px.svg" alt="My Site Preloader"> </div>
     <div id="home">
     <!--========= Landing page =========-->
-      <div id="landingPg" class="section__outline uk-background-top-right uk-background-contain uk-flex uk-flex-middle uk-flex-center" uk-parallax="bgy: 300"  uk-height-viewport>
+      <div id="landingPg" class="section__outline uk-background-top-right uk-background-contain uk-flex uk-flex-middle uk-flex-center" uk-parallax="bgy: -300"  uk-height-viewport>
         <!-- -- side nav -- -->
-        <!-- <div class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-          <div class="uk-navbar-right">
-              <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
-          </div>
-        </div>
-        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
-          <div class="uk-offcanvas-bar">
-              <ul class="uk-nav">
-                <li class="uk-text-large uk-transition-toggle" tabindex="0"><a href="#contactme">Contact</a></li>
-                <li class="uk-text-large"><a href="aboutme.html">About Me</a></li>
-              </ul>
-          </div>
-        </div> -->
-        <!-- -- nav -- -->
-        <!-- <div class="uk-panel uk-flex uk-flex-middle uk-flex-center"> -->
           <div id="landingimg" class=""><img src="img/landingHero.png" alt="">
           </div>
           <div id="landingtxt__pocket" class="transition-fade">
@@ -60,13 +45,25 @@
             <p class="landingtxt__03">
               Multimedia specialist and design thinker. <br/>A returning Singaporean.
             </p>
-            <a class="landingtxt__btn uk-button uk-button-default" href="aboutme.html">About Me</a>
+            <div class="landingtxt__btn__pocket">
+              <a class="landingtxt__btn uk-button uk-button-default" href="aboutme.html">About Me</a>
+              <div class="deco_btn_dot">
+                <img src="img/deco_btn.png" alt="">
+              </div>
+            </div>
           </div>
           <div id="scrollAni" class="uk-flex uk-flex-center">
             <div id="scrollAni-arrow" class="scrollAni-arrow-sec">
               <a href="#secondIntro"><span></span><span></span><span></span></a>
             </div>
           </div>
+
+          <!-- <div uk-parallax="y: 200; easing: -2" class="uk-flex uk-flex-center">
+            <img src="img/deco_scroll.png" alt="">
+          </div> -->
+          <!-- <div uk-parallax="y: 200; easing: 2" >
+            <img src="img/deco_btn.png" alt="">
+          </div> -->
         <!-- </div> -->
       </div>
 
@@ -102,8 +99,8 @@
       <!--========= Right Panel =========-->
       <div id="rightMain" class="section__outline uk-flex uk-flex-middle pink_splash" uk-parallax="bgy: 50" uk-height-viewport>
         <!---- imgs ---->
-        <div class="panelslide uk-cover-container">
-          <div uk-slideshow="animation: pull; autoplay: true; ratio: false">
+        <div class="panelslide uk-cover-container uk-visible-toggle">
+          <div uk-slideshow="animation: fade; autoplay: true; ratio: false">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
               <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 33">
@@ -122,9 +119,9 @@
               </ul>
             </div>
         
-            <ul class="uk-slideshow-nav uk-dotnav uk-flex-left@m uk-visible@m uk-margin"></ul>
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-left@m uk-visible@m uk-margin uk-invisible-hover"></ul>
 
-            <div class="uk-light uk-position-bottom-center uk-position-small uk-hidden@m">
+            <div class="uk-dark uk-position-bottom-center uk-position-small uk-hidden@m">
               <ul class="uk-dotnav dotnav__mobile">
                   <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
                   <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
@@ -158,8 +155,8 @@
       <!--========= Left Panel =========-->      
       <div id="leftMain" class="section__outline uk-flex uk-flex-middle blue_splash" uk-parallax="bgy: 50" uk-height-viewport>
         <!---- imgs ---->
-        <div class="panelslide uk-cover-container">
-          <div uk-slideshow="animation: pull; autoplay: true; ratio: false">
+        <div class="panelslide uk-cover-container uk-visible-toggle">
+          <div uk-slideshow="animation: fade; autoplay: true; ratio: false">
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
               <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 33">
@@ -175,8 +172,8 @@
               </ul>
             </div>
         
-            <ul class="uk-slideshow-nav uk-dotnav uk-flex-right@m uk-visible@m uk-margin"></ul>
-            <div class="uk-light uk-position-bottom-center uk-position-small uk-hidden@m">
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-right@m uk-visible@m uk-margin uk-invisible-hover"></ul>
+            <div class="uk-dark uk-position-bottom-center uk-position-small uk-hidden@m">
               <ul class="uk-dotnav dotnav__mobile">
                   <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
                   <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
