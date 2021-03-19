@@ -356,7 +356,7 @@ pre {
 @media only screen and (max-width: 960px) {
   .panelslide,
   .paneltxtC__area {
-    border: orange 1px solid;
+    /* border: orange 1px solid; */
   }
 
   .paneltxtC__area {
@@ -399,7 +399,7 @@ pre {
     right: unset;
   }
   .dotnav__mobile {
-    border: orange 1px solid;
+    /* border: orange 1px solid; */
     margin-bottom: 10px !important;
   }
 }
