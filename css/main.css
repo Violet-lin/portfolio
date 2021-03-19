@@ -283,11 +283,13 @@ pre {
     left: auto;
     width: 60%;
     text-align: center;
-    /* border: 1px solid brown; */
   }
   .landingtxt__btn__pocket {
-    /* border: rgb(19, 226, 36) 1px solid; */
     text-align: center;
+  }
+  .deco_btn_dot {
+    bottom: auto;
+    left: calc(50% - 110px) !important;
   }
   #landingimg {
     display: none;
@@ -298,15 +300,11 @@ pre {
   position: absolute;
   bottom: 100px;
 }
-.landingtxt__btn__pocket {
-  position: absolute;
-  /* border: rgb(33, 19, 226) 1px solid; */
-}
+
 .deco_btn_dot {
   position: absolute;
   bottom: -55px;
   left: -50px;
-  border: blueviolet 1px solid;
 }
 /* ------------ */
 /* SecondIntro  */

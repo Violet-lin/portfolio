@@ -41,6 +41,14 @@ tl.from("#landingPg", {
     "+=0"
   )
   .from(
+    ".deco_btn_dot",
+    {
+      opacity: 0,
+      duration: 0.5,
+    },
+    "+=0"
+  )
+  .from(
     "#scrollAni",
     {
       opacity: 0,
