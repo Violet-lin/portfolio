@@ -534,12 +534,12 @@ pre {
 @media only screen and (max-width: 600px) {
   .panelslide,
   .paneltxtC__area {
-    border: blueviolet 1px solid;
+    /* border: blueviolet 1px solid; */
   }
   .dotnav__mobile {
-    border: blueviolet 1px solid;
     bottom: 10px !important;
     /* margin-bottom: 8vh */
+    /* border: blueviolet 1px solid; */
   }
 }
 /* ------------ */
