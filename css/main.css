@@ -301,6 +301,11 @@ pre {
   bottom: 100px;
 }
 
+#decoScroll {
+  position: absolute;
+  bottom: -90px;
+}
+
 .deco_btn_dot {
   position: absolute;
   bottom: -55px;

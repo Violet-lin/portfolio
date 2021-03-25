@@ -49,13 +49,21 @@ tl.from("#landingPg", {
     "+=0"
   )
   .from(
-    "#scrollAni",
+    "#decoScroll",
     {
       opacity: 0,
       duration: 0.5,
     },
     "+=0"
-  );
+)
+.from(
+  "#scrollAni",
+  {
+    opacity: 0,
+    duration: 0.5,
+  },
+  "+=0"
+);
 /*=========================
   Last Panel
   =========================*/
