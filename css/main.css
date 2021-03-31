@@ -260,7 +260,45 @@ pre {
 .uk-button {
   padding: 0 20px !important;
 }
+/* SHIFT */
+.shift ul li a {
+  position: relative;
+  z-index: 1;
+}
+.shift ul li a:hover {
+  color: #91640f;
+}
+.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* right: 0; */
+  margin: auto;
+  width: 1px;
+  height: 50%;
+  content: ".";
+  color: transparent;
+  /* background: #edebe6; */
+  background: url(../img/deco_nav.png) no-repeat;
+  background-size: cover;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  /* border: 1px solid brown; */
+}
+.shift ul li a:hover:after {
+  opacity: 0.8;
+  visibility: visible;
+  width: 100px;
+}
 
+.shift ul li a,
+.shift ul li a:after,
+.shift ul li a:before {
+  transition: all 0.5s;
+}
 /* ------------ */
 /* Landing      */
 /* ------------ */
