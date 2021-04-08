@@ -312,6 +312,13 @@ pre {
 .uk-navbar-container .navItem {
   padding: 0 30px;
 }
+
+#onlineCV .uk-accordion-title {
+  text-align: center;
+}
+.uk-grid {
+  padding: 8% !important;
+}
 /* ------------ */
 /* Landing      */
 /* ------------ */
