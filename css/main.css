@@ -369,6 +369,41 @@ pre {
   bottom: -55px;
   left: -50px;
 }
+
+.landingimg {
+  /* position: relative; */
+  border: 1px solid blue;
+}
+
+.layer {
+  position: absolute;
+}
+
+#landingPhoto {
+  height: auto;
+  max-width: 50%;
+  object-fit: cover;
+  right: 20%;
+  bottom: 20%;
+}
+
+#triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 320px solid #fde9e9;
+  border-left: 450px solid transparent;
+  right: 10%;
+  bottom: 15%;
+}
+
+#square {
+  width: 525px;
+  height: 460px;
+  background: #faf2e2;
+  right: 20%;
+  bottom: 25%;
+}
+
 /* ------------ */
 /* SecondIntro  */
 /* ------------ */
@@ -656,6 +691,9 @@ pre {
   text-align: center;
 }
 
+#skillG .footer {
+  position: absolute;
+}
 .footer .footer-pocket {
   position: relative;
   top: 9px;
