@@ -305,12 +305,11 @@ pre {
   transition: all 0.5s;
 }
 
-.uk-navbar-nav > li > a,
-.uk-navbar-toggle {
+.uk-navbar-nav > li > a {
   padding: 0 !important;
 }
-.uk-navbar-container .navItem {
-  padding: 0 30px;
+.uk-navbar-toggle {
+  padding: 0 15px;
 }
 
 #onlineCV .uk-accordion-title {
