@@ -34,7 +34,7 @@
   </head>
 
   <body>
-    <div id="mainG">
+    <div id="worksG">
       <!-- -- sticky nav -- -->
       <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky>
         <div class="uk-navbar-left">
@@ -61,7 +61,7 @@
       </div>
       <!-- end side -->
       <div class="gallery-wrapper">
-        <div class="gallery-container">
+        <div class="gallery-mouse uk-visible@s">
           <h1>Works</h1>
           <div class="gallery-row">
             <a class="item item-1"href="gallery_mascot.html"></a>
@@ -74,8 +74,61 @@
             <a class="item item-6" href="gallery_psdtut.html"></a>
             <a class="item item-7" href="gallery_game.html"></a>
           </div>
-         </div>
-        
+        </div>
+        <!-- mobile version-->
+        <div class="gallery-touch uk-hidden@s">
+            <div class="uk-child-width-1-2 uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
+                <div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                    <a class="uk-inline" href="gallery_mascot.html" data-caption="Caption 1">
+                        <img src="img/gallery_mascot_col.jpg" alt="">
+                    </a>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                    <a class="uk-inline" href="gallery_print.html" data-caption="Caption 1">
+                    <img src="img/gallery_card_col.jpg" alt="">
+                    </a>
+                </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                        <a class="uk-inline" href="gallery_logo.html" data-caption="Caption 1">
+                            <img src="img/gallery_logo_vh01_s.jpg" alt="">
+                        </a>
+                    </div>             
+                    <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                        <a class="uk-inline" href="gallery_ui.html" data-caption="Caption 1">
+                        <img src="img/gallery_bb_main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                        <a class="uk-inline" href="gallery_ad.html" data-caption="Caption 1">
+                        <img src="img/gallery_ads_col.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                        <a class="uk-inline" href="gallery_psdtut.html" data-caption="Caption 1">
+                        <img src="img/gallery_psdtut_col.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                        <a class="uk-inline" href="gallery_game.html" data-caption="Caption 1">
+                            <img src="img/gallery_game_col.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- <div class="uk-card uk-card-default uk-card-body uk-grid-margin">        
+                        <a class="uk-inline" href="img/deco_gallery.png" data-caption="Caption 1">
+                            <img src="img/deco_gallery.png" alt="">
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- end of mobile version gallery-wrapper -->
       </div>
       <!-- end of gallery-wrapper -->
 

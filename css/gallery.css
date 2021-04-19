@@ -1,13 +1,8 @@
-.mobile-gallery .uk-card-body {
+.gallery-touch .uk-card-body {
   padding: 10px 10px;
 }
 
-.gallery-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.gallery-container {
+#worksG .gallery-wrapper {
   padding: 75px 0;
   margin: 0 auto;
   width: 90%;
