@@ -266,6 +266,13 @@ pre {
 .uk-button {
   padding: 0 20px !important;
 }
+
+/* SIDENAV */
+#sidenav .uk-active {
+  background: url(../img/deco_nav.png) no-repeat;
+  background-size: contain;
+}
+
 /* SHIFT */
 .shift ul li a {
   position: relative;
@@ -686,7 +693,7 @@ pre {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
   font-size: small;
   text-align: center;
 }
