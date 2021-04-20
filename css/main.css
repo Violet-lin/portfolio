@@ -656,7 +656,7 @@ pre {
   margin-bottom: 20%;
 }
 #manageMain .content .content__brim {
-  background-color: #fefdfb;
+  background-color: rgba(235, 235, 235, 0.5);
   width: 70vw;
   height: auto;
   margin-left: auto;
