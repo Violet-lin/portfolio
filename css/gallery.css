@@ -1,5 +1,8 @@
 .gallery-touch .uk-card-body {
-  padding: 10px 10px;
+  padding: 3px 1px;
+  height: auto;
+  min-height: 20vh;
+  width: 40vw;
 }
 
 #worksG .gallery-wrapper {
