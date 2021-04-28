@@ -27,16 +27,16 @@ tl.from("#landingPg", {
     {
       opacity: 0,
       translateY: 50,
-      duration: 1.5,
+      duration: 1,
     },
-    "+=1"
+    "+=0"
   )
 
   .from(
     ".landingtxt__btn",
     {
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
     },
     "+=0"
   )
@@ -46,7 +46,7 @@ tl.from("#landingPg", {
       opacity: 0,
       duration: 0.5,
     },
-    "+=0"
+    "+=0.5"
   )
   .from(
     "#decoScroll",
@@ -54,7 +54,7 @@ tl.from("#landingPg", {
       opacity: 0,
       duration: 0.5,
     },
-    "+=0"
+    "+=0.5"
 )
 .from(
   "#scrollAni",
