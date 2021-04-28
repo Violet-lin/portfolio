@@ -286,6 +286,7 @@ pre {
 .shift ul li a:hover {
   color: #91640f;
 }
+
 .shift ul li a:after {
   display: block;
   position: absolute;
@@ -317,7 +318,10 @@ pre {
 .shift ul li a:before {
   transition: all 0.5s;
 }
-
+.shift ul .uk-active {
+  background: url(../img/deco_nav.png) no-repeat 10px, 10px;
+  background-size: contain;
+}
 .uk-navbar-nav > li > a {
   padding: 0 !important;
 }
@@ -380,6 +384,7 @@ pre {
   position: absolute;
   bottom: -55px;
   left: -50px;
+  z-index: -100;
 }
 
 .landingimg {
@@ -693,22 +698,36 @@ pre {
 /* ------------ */
 
 .footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  /* background-color: #e6e6e6; */
+  top: 100%;
   font-size: small;
   text-align: center;
+  width: 100%;
+  position: relative;
 }
 
-#skillG .footer {
-  position: absolute;
+.footer-bg-circle {
+  content: "";
+  display: inline-block;
+  background-color: #efebe2;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  height: 70px;
+  width: 140px;
 }
-.footer .footer-pocket {
-  position: relative;
-  top: 9px;
+
+.footer-bg-rect {
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  background-color: #efebe2;
+  bottom: 0;
+}
+
+.footer-pocket {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
 }
 #contactme {
   background-image: url(../img/bg_footer.png);
@@ -718,18 +737,15 @@ pre {
 
 #contactme .contacttxt__pocket {
   text-align: center;
-  /* border: 1px solid red; */
 }
 
 #contactme .contacttxt__text {
   font-size: x-large;
-  /* border: 1px solid orange; */
 }
 
 .contactme-icon {
   margin: 25px 10px;
   font-size: xx-large;
-  /* border: 1px solid orange; */
 }
 
 /* ------------ */
