@@ -30,6 +30,9 @@
 .col_text {
   background-color: #666;
 }
+.col_hover_text {
+  color: #565555;
+}
 /* ------------ */
 /* Background       */
 /* ------------ */
