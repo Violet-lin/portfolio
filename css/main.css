@@ -696,7 +696,11 @@ pre {
 /* ------------ */
 /* Footer       */
 /* ------------ */
-
+#contact-me {
+  background-image: url(../img/bg_footer.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 .footer {
   top: 100%;
   font-size: small;
@@ -729,11 +733,6 @@ pre {
   bottom: 5px;
   text-align: center;
   width: 100%;
-}
-#contactme {
-  background-image: url(../img/bg_footer.png);
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 #contactme .contacttxt__pocket {
