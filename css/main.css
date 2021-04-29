@@ -1231,11 +1231,11 @@ html.is-animating .transition-wipe {
   font-size: 2.5rem;
   line-height: 0;
 }
-#contactme.fa-envelope-square {
+#contactme .fa-envelope-square {
   font-size: 1.5rem;
   transition: all 0.5s ease;
 }
-#contactme.fa-envelope-square:hover {
+#contactme .fa-envelope-square:hover {
   font-size: 2.5rem;
   line-height: 0;
 }
