@@ -251,6 +251,11 @@ pre {
 /* overwrite    */
 /* ------------ */
 
+.uk-lightbox-iframe {
+  width: 732px !important;
+  height: 94px !important;
+}
+
 .uk-navbar-container .navItem {
   display: flex;
   align-items: center;
