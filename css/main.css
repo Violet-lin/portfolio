@@ -247,6 +247,11 @@ pre {
   margin-right: 20px;
   /* margin-bottom: 5px; */
 }
+
+.uk-lightbox-items video {
+  width: 728px !important;
+  height: 90px !important;
+}
 /* ------------ */
 /* overwrite    */
 /* ------------ */
